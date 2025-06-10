@@ -50,7 +50,7 @@ const ProjectsPage = () => {
 
   return (
     <div className="min-h-screen bg-white dark:bg-black">
-      <div className="max-w-5xl mx-auto px-6 pt-26 py-20">
+      <div className="max-w-5xl mx-auto px-6 pt-5 pb-20">
         {/* Header */}
         <header className="mb-16">
           <Link
