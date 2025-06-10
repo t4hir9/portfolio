@@ -1,0 +1,19 @@
+"use client";
+
+import React from "react";
+import Link from "next/link";
+
+export default function Logo() {
+  return (
+    <Link href="/" className="group cursor-pointer relative">
+      <div className="flex items-baseline gap-1.5">
+        <span className="text-3xl font-extralight text-neutral-900 dark:text-neutral-100 tracking-tight transition-all duration-300 group-hover:text-neutral-700 dark:group-hover:text-neutral-300">
+          Khaleel
+        </span>
+        <span className="text-xl font-thin text-neutral-500 dark:text-neutral-400 tracking-wide transition-all duration-300 group-hover:text-neutral-600 dark:group-hover:text-neutral-300">
+          Alhaji
+        </span>
+      </div>
+    </Link>
+  );
+}
