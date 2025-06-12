@@ -1,14 +1,16 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Khaleel Alhaji | Front-End Developer",
+  title: {
+    template: '%s | Khaleel Alhaji',
+    default: 'Khaleel Alhaji'
+  },
   description:
-    "Portfolio website of Khaleel Alhaji — Front-End Developer from Nigeria based in India. I build user-friendly, performant web experiences using React, Next.js, and modern web technologies.",
+    "Khaleel Alhaji is a Front-End Developer based in India, specializing in React, Next.js, JavaScript, and building responsive web applications for global clients.",
   metadataBase: new URL("https://khaleelalhaji.info"),
   alternates: {
     canonical: "/",
@@ -24,27 +26,27 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Khaleel Alhaji | Front-End Developer",
+    title: "Khaleel Alhaji | Front-End Developer in India | React & Next.js",
     description:
-      "Portfolio website of Khaleel Alhaji — Front-End Developer from Nigeria based in India. I build user-friendly, performant web experiences using React, Next.js, and modern web technologies.",
+      "Khaleel Alhaji is a skilled Front-End Developer from India, specializing in React, Next.js, JavaScript, and creating user-friendly, responsive web applications.",
     url: "https://khaleelalhaji.info",
-    siteName: "Khaleel Alhaji",
+    siteName: "Khaleel Alhaji Portfolio",
     images: [
       {
         url: "https://khaleelalhaji.info/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Khaleel Alhaji Portfolio",
+        alt: "Khaleel Alhaji Portfolio - Front-End Developer",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Khaleel Alhaji | Front-End Developer",
+    title: "Khaleel Alhaji | Front-End Developer in India",
     description:
-      "Portfolio website of Khaleel Alhaji — Front-End Developer from Nigeria based in India. I build user-friendly, performant web experiences using React, Next.js, and modern web technologies.",
+      "Portfolio of Khaleel Alhaji, a Front-End Developer from India, specializing in React and Next.js.",
     images: ["https://khaleelalhaji.info/og-image.jpg"],
     creator: "@khaleelalhaji",
   },
@@ -60,23 +62,42 @@ export const metadata = {
   },
   manifest: "/site.webmanifest",
 };
+
 export const viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
     { media: "(prefers-color-scheme: dark)", color: "#000000" },
   ],
 };
+
 export default function RootLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Khaleel Alhaji",
-    jobTitle: "Front-End Developer",
+    jobTitle: "Frontend Developer in India",
     url: "https://khaleelalhaji.info",
     sameAs: [
       "https://www.linkedin.com/in/khaleelalhaji/",
       "https://github.com/khaleelibraheem",
     ],
+    skills: [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Web Development",
+    ],
+    worksFor: {
+      "@type": "Organization",
+      name: "Freelancer",
+    },
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "India",
+    },
   };
 
   return (
@@ -97,7 +118,6 @@ export default function RootLayout({ children }) {
           disableTransitionOnChange
         >
           <main className="min-h-[80vh]">{children}</main>
-          <Footer />
         </ThemeProvider>
       </body>
     </html>
