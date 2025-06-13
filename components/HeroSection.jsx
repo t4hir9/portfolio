@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight, Download, MapPin } from "lucide-react";
+import Link from "next/link";
 
 const HeroSection = ({ scrollToSection }) => (
   <section id="home" className="pt-16 pb-40 scroll-mt-16">
@@ -43,7 +44,7 @@ const HeroSection = ({ scrollToSection }) => (
           />
         </button>
 
-        <a
+        <Link
           href="/resume.pdf"
           download
           className="inline-flex items-center gap-3 px-10 py-5 border border-neutral-300 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-light rounded-none hover:bg-white dark:hover:bg-neutral-800 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-500"
@@ -51,7 +52,7 @@ const HeroSection = ({ scrollToSection }) => (
         >
           <Download className="w-4 h-4" />
           <span>Download Resume</span>
-        </a>
+        </Link>
       </div>
     </div>
   </section>
