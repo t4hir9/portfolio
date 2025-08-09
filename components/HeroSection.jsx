@@ -22,7 +22,8 @@ const HeroSection = ({ scrollToSection }) => (
 
       <div className="max-w-2xl mb-16">
         <p className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-300 leading-relaxed font-light mb-8">
-          I craft digital experiences that are both beautiful and functional, focusing on clean code and thoughtful design.
+          I craft digital experiences that are both beautiful and functional,
+          focusing on clean code and thoughtful design.
         </p>
 
         <div className="flex items-center gap-3 text-sm text-neutral-500 dark:text-neutral-400 font-light">
@@ -32,17 +33,17 @@ const HeroSection = ({ scrollToSection }) => (
       </div>
 
       <div className="flex flex-col sm:flex-row gap-4">
-        <button
-          onClick={() => scrollToSection("work")}
+        <Link
+          href={"/projects"}
           className="group inline-flex items-center gap-3 px-10 py-5 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 text-sm font-light rounded-none hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-500 hover:shadow-2xl hover:shadow-neutral-900/20 dark:hover:shadow-neutral-100/20 hover:-translate-y-0.5"
           aria-label="View my selected work portfolio"
         >
-          <span>View Selected Work</span>
+          <span>View All Projects</span>
           <ArrowRight
             className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300"
             aria-hidden="true"
           />
-        </button>
+        </Link>
 
         <Link
           href="/resume.pdf"

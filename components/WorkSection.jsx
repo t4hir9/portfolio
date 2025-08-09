@@ -9,27 +9,29 @@ const WorkSection = () => {
 
   const projects = [
     {
-      title: "Task Management Dashboard",
+      title: "Marginplus - Agricultural Investment Platform",
       description:
-        "A collaborative project management tool designed for small to medium teams with focus on simplicity and productivity.",
-      year: "2023",
-      role: "Full Stack",
-      duration: "16 weeks",
-      tech: ["React", "Node.js", "PostgreSQL", "Express"],
-      image: "/taskflow.png",
-      fallbackIcon: "📋",
+        "A platform connecting farmers with investors to fund agricultural projects, focusing on transparency and impact.",
+      year: "2025",
+      role: "Frontend Developer",
+      duration: "12 weeks",
+      tech: ["Next.js", "Tailwind CSS"],
+      image: "/marginplus.png",
+      fallbackIcon: "🌾",
+      url: "https://marginplus.ng",
     },
-    
+
     {
-      title: "FX Exchange App",
+      title: "AbujaBureauDeChange - FX Exchange App",
       description:
         "A real-time foreign exchange application that provides live currency rates and conversion tools with a focus on speed and reliability.",
       year: "2024",
-      role: "Solo Project",
-      duration: "8 weeks",
+      role: "Frontend Developer",
+      duration: "16 weeks",
       tech: ["React", "Tailwind CSS", "Clerk", "Chart.js"],
       image: "/fx.png",
       fallbackIcon: "💱",
+      url: "https://abujabureaudechange.vercel.app",
     },
   ];
 
@@ -41,7 +43,7 @@ const WorkSection = () => {
     <section id="work" className="pb-40 scroll-mt-[150px]">
       <div className="mb-16">
         <h2 className="text-4xl md:text-5xl font-extralight text-neutral-900 dark:text-neutral-100 mb-12 tracking-tight">
-          Selected Work
+          Selected Projects
         </h2>
 
         <p className="text-xl text-neutral-600 dark:text-neutral-300 leading-relaxed mb-16 max-w-3xl font-light">

@@ -11,72 +11,54 @@ const ProjectsClient = () => {
   const router = useRouter();
 
   const projects = [
-    // {
-    //   title: "Accommodation Finder",
-    //   description:
-    //     "A comprehensive platform designed to help African students find suitable housing in India. Built with a focus on user experience and real-time data integration.",
-    //   year: "2024",
-    //   role: "Lead Frontend",
-    //   duration: "12 weeks",
-    //   tech: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS"],
-    //   image: "/accommodation.png",
-    //   fallbackIcon: "🏠",
-    // },
     {
-      title: "FX Exchange App",
+      title: "AbujaBureauDeChange - FX Exchange App",
       description:
         "A real-time foreign exchange application that provides live currency rates and conversion tools with a focus on speed and reliability.",
       year: "2024",
-      role: "Solo Project",
-      duration: "8 weeks",
+      role: "Frontend Developer",
+      duration: "16 weeks",
       tech: ["React", "Tailwind CSS", "Clerk", "Chart.js"],
       image: "/fx.png",
       fallbackIcon: "💱",
+      url: "https://abujabureaudechange.vercel.app",
     },
     {
-      title: "Task Management Dashboard",
+      title: "TaskFlow - Task Management Dashboard",
       description:
-        "A collaborative project management tool designed for small to medium teams with focus on simplicity and productivity.",
-      year: "2023",
+        "A project management tool designed for small to medium teams with focus on simplicity and productivity.",
+      year: "2024",
       role: "Full Stack",
-      duration: "16 weeks",
-      tech: ["React", "Node.js", "PostgreSQL", "Express"],
+      duration: "8 weeks",
+      tech: ["React", "Next.js", "Firebase", "Tailwind CSS", "Clerk"],
       image: "/taskflow.png",
       fallbackIcon: "📋",
+      url: "https://taskkflow.vercel.app",
     },
-    // {
-    //   title: "E-commerce Analytics",
-    //   description:
-    //     "Advanced analytics platform for e-commerce businesses to track performance, customer behavior, and sales trends.",
-    //   year: "2023",
-    //   role: "Frontend Lead",
-    //   duration: "20 weeks",
-    //   tech: ["Vue.js", "D3.js", "Python", "FastAPI"],
-    //   image: "/analytics.png",
-    //   fallbackIcon: "📊",
-    // },
-    // {
-    //   title: "Learning Management System",
-    //   description:
-    //     "Educational platform with course management, progress tracking, and interactive learning modules for online education.",
-    //   year: "2023",
-    //   role: "Full Stack",
-    //   duration: "24 weeks",
-    //   tech: ["React", "Django", "PostgreSQL", "Redis"],
-    //   image: "/lms.png",
-    //   fallbackIcon: "🎓",
-    // },
-    // {
-    //   title: "Social Media Dashboard",
-    //   description:
-    //     "Unified dashboard for managing multiple social media accounts with scheduling, analytics, and engagement tracking.",
-    //   year: "2022",
-    //   role: "Frontend Developer",
-    //   duration: "14 weeks",
-    //   tech: ["Angular", "TypeScript", "Node.js", "MongoDB"],
-    //   image: "/social.png",
-    //   fallbackIcon: "📱",
-    // },
+    {
+      title: "Marginplus - Agricultural Investment Platform",
+      description:
+        "A platform connecting farmers with investors to fund agricultural projects, focusing on transparency and impact.",
+      year: "2025",
+      role: "Frontend Developer",
+      duration: "12 weeks",
+      tech: ["Next.js", "Tailwind CSS"],
+      image: "/marginplus.png",
+      fallbackIcon: "🌾",
+      url: "https://marginplus.ng",
+    },
+    {
+      title: "Essential Musik - Music Label Website",
+      description:
+        "A modern website for a music label showcasing artists, albums, and events with a focus on user engagement.",
+      year: "2025",
+      role: "Frontend Developer",
+      duration: "2 weeks",
+      tech: ["Next.js", "Tailwind CSS"],
+      image: "/essentialmusik.png",
+      fallbackIcon: "🎵",
+      url: "https://essential-musik.vercel.app",
+    },
   ];
 
   const handleImageError = (index) => {
@@ -137,7 +119,7 @@ const ProjectsClient = () => {
                 interesting projects.
               </p>
               <a
-                href="mailto:contact@example.com"
+                href="mailto:alhajikhaleel@gmail.com"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-black rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors duration-200 font-medium"
               >
                 Get in Touch

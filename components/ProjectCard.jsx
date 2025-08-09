@@ -6,11 +6,11 @@ import Link from "next/link";
 const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
   return (
     <article key={index} className="group">
-      <Link
-        href="#"
+      <a
+        href={project.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="block p-6 rounded-2xl transition-all duration-300 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/50"
+        className="cursor-pointer block p-6 rounded-2xl transition-all duration-300 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/50"
       >
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Project Image */}
@@ -72,9 +72,10 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
                 ))}
               </div>
             </div>
+
           </div>
         </div>
-      </Link>
+      </a>
     </article>
   );
 };

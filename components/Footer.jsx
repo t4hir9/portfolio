@@ -29,7 +29,7 @@ export default function Footer({ homepage = true }) {
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="flex items-center gap-8">
             <Link
-              href="https://linkedin.com/in/khaleel-alhaji"
+              href="https://linkedin.com/in/khaleelalhaji"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-gray-500 dark:text-neutral-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 relative group flex items-center gap-2"
@@ -39,7 +39,7 @@ export default function Footer({ homepage = true }) {
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-gray-900 dark:bg-white transition-all duration-300 group-hover:w-full" />
             </Link>
             <Link
-              href="https://github.com/khaleel-alhaji"
+              href="https://github.com/khaleelibraheem"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-gray-500 dark:text-neutral-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 relative group flex items-center gap-2"
@@ -49,7 +49,7 @@ export default function Footer({ homepage = true }) {
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-gray-900 dark:bg-white transition-all duration-300 group-hover:w-full" />
             </Link>
             <Link
-              href="mailto:khaleel@example.com"
+              href="mailto:alhajikhaleel@gmail.com.com"
               className="text-sm text-gray-500 dark:text-neutral-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 relative group flex items-center gap-2"
             >
               <Mail className="w-4 h-4" />
