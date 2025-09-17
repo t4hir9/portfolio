@@ -9,29 +9,40 @@ const WorkSection = () => {
 
   const projects = [
     {
-      title: "Marginplus - Agricultural Investment Platform",
+      title: "jaybash Customs - Car Customization & Drift School",
       description:
-        "A platform connecting farmers with investors to fund agricultural projects, focusing on transparency and impact.",
+        "A state of the art website built for the one and only drift king. Users can customise their rides and book drift lessons.",
       year: "2025",
       role: "Frontend Developer",
-      duration: "12 weeks",
-      tech: ["Next.js", "Tailwind CSS"],
-      image: "/marginplus.png",
-      fallbackIcon: "🌾",
-      url: "https://marginplus.ng",
-    },
-
-    {
-      title: "AbujaBureauDeChange - FX Exchange App",
-      description:
-        "A real-time foreign exchange application that provides live currency rates and conversion tools with a focus on speed and reliability.",
-      year: "2024",
-      role: "Frontend Developer",
-      duration: "16 weeks",
-      tech: ["React", "Tailwind CSS", "Clerk", "Chart.js"],
-      image: "/fx.png",
+      duration: "4 weeks",
+      tech: ["Nextjs", "Tailwind CSS", "typescript"],
+      image: "/jaybashcustoms.png",
       fallbackIcon: "💱",
-      url: "https://abujabureaudechange.vercel.app",
+      url: "https://jaybash-customs.vercel.app",
+    },
+    {
+      title: "mindspace - Mental Health Platform",
+      description:
+        "A project created to help students with their mental health by providing resources and a safe space to talk.",
+      year: "2024",
+      role: "Full Stack",
+      duration: "12 weeks",
+      tech: ["React", "Next.js", "Supabase", "Tailwind CSS", "TypeScriptS"],
+      image: "/mindspace.png",
+      fallbackIcon: "📋",
+      url: "https://mindspace.vercel.app",
+    },
+    {
+      title: "Media samples",
+      description:
+        "A collection of media projects including photography and videography samples showcasing my skills and creativity.",
+      year: "2020 - Present",
+      role: "Media Expert",
+      duration: "Ongoing",
+      tech: ["Photoshop", "Premiere Pro", "After Effects", "DaVinci Resolve"],
+      images: ["/background2.JPG", "/background3.JPG", "/background.JPG","/54.jpg","/45.jpg","/24.jpg","/8.jpg","/6.jpg","/14.jpg"],
+      fallbackIcon: "🎥",
+      url: "/photos",
     },
   ];
 

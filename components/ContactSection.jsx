@@ -13,7 +13,7 @@ const ContactSection = () => (
 
       <div className="flex flex-col sm:flex-row gap-4 mb-16">
         <a
-          href="mailto:alhajikhaleel@gmail.com"
+          href="mailto:abdultahir779@gmail.com"
           className="inline-flex items-center gap-3 px-10 py-5 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 text-sm font-light rounded-none hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-500 hover:shadow-2xl hover:-translate-y-0.5"
           aria-label="Send me an email"
         >
@@ -22,7 +22,7 @@ const ContactSection = () => (
         </a>
 
         <a
-          href="https://linkedin.com/in/khaleelalhaji"
+          href="https://linkedin.com/in/iamt4hir9"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 px-10 py-5 border border-neutral-300 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 text-sm font-light rounded-none hover:bg-white dark:hover:bg-neutral-800 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-500"

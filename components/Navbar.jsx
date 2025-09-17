@@ -107,9 +107,6 @@ export default function Navbar() {
                 ))}
               </div>
 
-              {/* Theme Toggle */}
-              <ThemeToggle />
-
               {/* Mobile Menu Button */}
               <button
                 onClick={toggleMenu}
@@ -193,29 +190,6 @@ export default function Navbar() {
               ))}
             </div>
 
-            {/* Additional Content */}
-            <div
-              className={`mt-2 pt-6 border-t border-neutral-200 dark:border-neutral-700 ${
-                isMenuOpen ? "animate-slide-up" : ""
-              }`}
-              style={{
-                animationDelay: "500ms",
-                animationFillMode: "backwards",
-              }}
-            >
-              <p className="text-sm text-neutral-500 dark:text-neutral-400 text-center">
-                Ready to work together?
-              </p>
-              <button
-                className="w-full mt-4 px-6 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full text-sm font-medium transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  // Add your contact action here
-                }}
-              >
-                Get in Touch
-              </button>
-            </div>
           </div>
         </div>
       </div>

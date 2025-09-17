@@ -6,12 +6,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    template: '%s | Khaleel Alhaji',
-    default: 'Khaleel Alhaji'
+    template: '%s | Abdullahi Tahir Adamu',
+    default: 'Abdullahi Tahir Adamu'
   },
   description:
-    "Khaleel Alhaji is a Front-End Developer based in India, specializing in React, Next.js, JavaScript, and building responsive web applications for global clients.",
-  metadataBase: new URL("https://khaleelalhaji.info"),
+    "Abdullahi Tahir Adamu is a Front-End Developer and Media Expert based in Nigeria, specializing in React, Next.js, JavaScript, and building responsive web applications for global clients. He also provides top-notch media solutions including photography, videography, and social media marketing.",
+  metadataBase: new URL("https://tahiradamu.info"),
   alternates: {
     canonical: "/",
   },
@@ -26,39 +26,39 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Khaleel Alhaji | Front-End Developer in India | React & Next.js",
+    title: "Abdullahi Tahir Adamu | Front-End Developer & Media Expert",
     description:
-      "Khaleel Alhaji is a skilled Front-End Developer from India, specializing in React, Next.js, JavaScript, and creating user-friendly, responsive web applications.",
-    url: "https://khaleelalhaji.info",
-    siteName: "Khaleel Alhaji Portfolio",
+      "Abdullahi Tahir Adamu is a skilled Front-End Developer and Media Expert from Nigeria, specializing in React, Next.js, JavaScript, and creating user-friendly, responsive web applications.",
+    url: "https://tahiradamu.info",
+    siteName: "Abdullahi Tahir Adamu Portfolio",
     images: [
       {
-        url: "https://khaleelalhaji.info/og-image.jpg",
+        url: "https://tahiradamu.info/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Khaleel Alhaji Portfolio - Front-End Developer",
+        alt: "Abdullahi Tahir Adamu Portfolio - Front-End Developer & Media Expert",
       },
     ],
-    locale: "en_IN",
+    locale: "en_NG",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Khaleel Alhaji | Front-End Developer in India",
+    title: "Abdullahi Tahir Adamu | Front-End Developer & Media Expert in Nigeria",
     description:
-      "Portfolio of Khaleel Alhaji, a Front-End Developer from India, specializing in React and Next.js.",
-    images: ["https://khaleelalhaji.info/og-image.jpg"],
-    creator: "@khaleelalhaji",
+      "Portfolio of Abdullahi Tahir Adamu, a Front-End Developer and Media Expert from Nigeria, specializing in React, Next.js, and media solutions.",
+    images: ["https://tahiradamu.info/og-image.png"],
+    creator: "@iamt4hir9",
   },
   authors: [
     {
-      name: "Khaleel Alhaji",
-      url: "https://khaleelalhaji.info",
+      name: "Abdullahi Tahir Adamu",
+      url: "https://tahiradamu.info",
     },
   ],
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: "/whitelogo.png",
+    apple: "/whitelogo.png",
   },
   manifest: "/site.webmanifest",
 };
@@ -74,12 +74,12 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Khaleel Alhaji",
-    jobTitle: "Frontend Developer in India",
-    url: "https://khaleelalhaji.info",
+    name: "Abdullahi Tahir Adamu",
+    jobTitle: "Front-End Developer and Media Expert",
+    url: "https://tahiradamu.info",
     sameAs: [
-      "https://www.linkedin.com/in/khaleelalhaji/",
-      "https://github.com/khaleelibraheem",
+      "https://www.linkedin.com/in/iamt4hir9/",
+      "https://github.com/t4hir9",
     ],
     skills: [
       "React",
@@ -89,6 +89,9 @@ export default function RootLayout({ children }) {
       "HTML5",
       "CSS3",
       "Web Development",
+      "Photography",
+      "Videography",
+      "Social Media Marketing"
     ],
     worksFor: {
       "@type": "Organization",
@@ -96,9 +99,21 @@ export default function RootLayout({ children }) {
     },
     address: {
       "@type": "PostalAddress",
-      addressLocality: "India",
+      addressLocality: "Nigeria",
     },
   };
+
+  return (
+    <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body className={inter.className}>{children}</body>
+    </html>
+  );
 
   return (
     <html lang="en" suppressHydrationWarning>

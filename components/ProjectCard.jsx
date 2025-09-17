@@ -1,82 +1,93 @@
-import React from "react";
-import { ExternalLink } from "lucide-react";
-import Image from "next/image";
+"use client";
+
+import React, { useState, useEffect } from "react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    if (project.title === "Media samples" && project.images) {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project.images.length);
+      }, 2000); // Change image every 2 seconds
+
+      return () => clearInterval(interval); // Cleanup interval on unmount
+    }
+  }, [project.title, project.images]);
+
   return (
-    <article key={index} className="group">
-      <a
-        href={project.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="cursor-pointer block p-6 rounded-2xl transition-all duration-300 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/50"
-      >
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-          {/* Project Image */}
-          <div className="w-full bg-gradient-to-br from-neutral-50 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800 rounded-xl overflow-hidden transition-all duration-300 shadow-sm">
-            {!imageErrors[index] ? (
-              <Image
-                src={project.image}
-                alt={`${project.title} screenshot`}
-                width={600}
-                height={400}
-                className="w-full h-auto transition-transform duration-300"
-                onError={() => handleImageError(index)}
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            ) : (
-              <div className="w-full h-full flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">{project.fallbackIcon}</div>
-                  <div className="text-sm text-neutral-500 dark:text-neutral-400 font-medium">
-                    {project.title}
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* Project Details */}
-          <div className="space-y-6">
-            <div>
-              <div className="flex items-center gap-3 text-sm text-neutral-500 dark:text-neutral-400 mb-4">
-                <span className="font-medium">{project.year}</span>
-                <span>•</span>
-                <span>{project.role}</span>
-                <span>•</span>
-                <span>{project.duration}</span>
-              </div>
-
-              <div className="flex items-center gap-2 mb-4">
-                <h3 className="text-2xl md:text-3xl font-light text-neutral-900 dark:text-neutral-100 leading-tight">
-                  {project.title}
-                </h3>
-                <ExternalLink className="w-5 h-5 text-neutral-400 dark:text-neutral-500 group-hover:text-neutral-600 dark:group-hover:text-neutral-300 transition-colors duration-200" />
-              </div>
-
-              <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed">
-                {project.description}
-              </p>
+    <div className="flex flex-col md:flex-row gap-6 md:gap-12">
+      {/* Image/Slideshow */}
+      <div className="flex-1">
+        {project.title === "Media samples" && project.images ? (
+          imageErrors[index] ? (
+            <div className="w-full h-64 bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center text-4xl">
+              {project.fallbackIcon}
             </div>
-
-            <div>
-              <div className="flex flex-wrap gap-2 mb-8">
-                {project.tech.map((tech) => (
-                  <span
-                    key={tech}
-                    className="text-xs px-3 py-1.5 bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 rounded-full font-medium"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
+          ) : (
+            <div
+              className="w-full h-64 bg-cover bg-center bg-no-repeat rounded-lg transition-all duration-500"
+              style={{ backgroundImage: `url(${project.images[currentImageIndex]})` }}
+              onError={() => handleImageError(index)}
+            ></div>
+          )
+        ) : (
+          imageErrors[index] ? (
+            <div className="w-full h-64 bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center text-4xl">
+              {project.fallbackIcon}
             </div>
+          ) : (
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-64 object-cover rounded-lg"
+              onError={() => handleImageError(index)}
+            />
+          )
+        )}
+      </div>
 
-          </div>
+      {/* Content */}
+      <div className="flex-1">
+        <h3 className="text-2xl md:text-3xl font-light text-neutral-900 dark:text-neutral-100 mb-2">
+          {project.title}
+        </h3>
+        <p className="text-neutral-600 dark:text-neutral-300 mb-4">
+          {project.description}
+        </p>
+        <div className="flex flex-col sm:flex-row gap-2 text-sm text-neutral-500 dark:text-neutral-400 mb-4">
+          <span>{project.year}</span>
+          <span>•</span>
+          <span>{project.role}</span>
+          <span>•</span>
+          <span>{project.duration}</span>
         </div>
-      </a>
-    </article>
+        <div className="flex flex-wrap gap-2 mb-4">
+          {project.tech.map((tech, i) => (
+            <span
+              key={i}
+              className="text-sm text-neutral-700 dark:text-neutral-300 font-mono px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-sm"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+        {project.url && (
+          <Link
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-200 group"
+            aria-label={`View ${project.title}`}
+          >
+            <span>View Project</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+          </Link>
+        )}
+      </div>
+    </div>
   );
 };
 

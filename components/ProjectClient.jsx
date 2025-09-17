@@ -12,52 +12,40 @@ const ProjectsClient = () => {
 
   const projects = [
     {
-      title: "AbujaBureauDeChange - FX Exchange App",
+      title: "jaybash Customs - Car Customization & Drift School",
       description:
-        "A real-time foreign exchange application that provides live currency rates and conversion tools with a focus on speed and reliability.",
-      year: "2024",
+        "A state of the art website built for the one and only drift king. Users can customise their rides and book drift lessons.",
+      year: "2025",
       role: "Frontend Developer",
-      duration: "16 weeks",
-      tech: ["React", "Tailwind CSS", "Clerk", "Chart.js"],
-      image: "/fx.png",
+      duration: "4 weeks",
+      tech: ["Nextjs", "Tailwind CSS", "typescript"],
+      image: "/jaybashcustoms.png",
       fallbackIcon: "💱",
-      url: "https://abujabureaudechange.vercel.app",
+      url: "https://jaybash-customs.vercel.app",
     },
     {
-      title: "TaskFlow - Task Management Dashboard",
+      title: "mindspace - Mental Health Platform",
       description:
-        "A project management tool designed for small to medium teams with focus on simplicity and productivity.",
+        "A project created to help students with their mental health by providing resources and a safe space to talk.",
       year: "2024",
       role: "Full Stack",
-      duration: "8 weeks",
-      tech: ["React", "Next.js", "Firebase", "Tailwind CSS", "Clerk"],
-      image: "/taskflow.png",
-      fallbackIcon: "📋",
-      url: "https://taskkflow.vercel.app",
-    },
-    {
-      title: "Marginplus - Agricultural Investment Platform",
-      description:
-        "A platform connecting farmers with investors to fund agricultural projects, focusing on transparency and impact.",
-      year: "2025",
-      role: "Frontend Developer",
       duration: "12 weeks",
-      tech: ["Next.js", "Tailwind CSS"],
-      image: "/marginplus.png",
-      fallbackIcon: "🌾",
-      url: "https://marginplus.ng",
+      tech: ["React", "Next.js", "Supabase", "Tailwind CSS", "TypeScript"],
+      image: "/mindspace.png",
+      fallbackIcon: "📋",
+      url: "https://mindspace.vercel.app",
     },
     {
-      title: "Essential Musik - Music Label Website",
+      title: "Media samples",
       description:
-        "A modern website for a music label showcasing artists, albums, and events with a focus on user engagement.",
-      year: "2025",
-      role: "Frontend Developer",
-      duration: "2 weeks",
-      tech: ["Next.js", "Tailwind CSS"],
-      image: "/essentialmusik.png",
-      fallbackIcon: "🎵",
-      url: "https://essential-musik.vercel.app",
+        "A collection of media projects including photography and videography samples showcasing my skills and creativity.",
+      year: "2020 - Present",
+      role: "Media Expert",
+      duration: "Ongoing",
+      tech: ["Photoshop", "Premiere Pro", "After Effects", "DaVinci Resolve"],
+      images: ["/background2.JPG", "/background3.JPG", "/background.JPG","/54.jpg","/45.jpg","/24.jpg","/8.jpg","/6.jpg","/14.jpg"],
+      fallbackIcon: "🎥",
+      url: "/photos",
     },
   ];
 
@@ -85,8 +73,7 @@ const ProjectsClient = () => {
               </h1>
               <p className="text-xl text-neutral-600 dark:text-neutral-300 leading-relaxed mb-16 max-w-3xl font-light">
                 A collection of projects that showcase my approach to solving
-                complex problems through thoughtful design and clean
-                implementation.
+                complex problems through thoughtful design and eye-catching moments
               </p>
             </div>
           </header>
@@ -119,7 +106,7 @@ const ProjectsClient = () => {
                 interesting projects.
               </p>
               <a
-                href="mailto:alhajikhaleel@gmail.com"
+                href="mailto:abdultahir779@gmail.com"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-black rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors duration-200 font-medium"
               >
                 Get in Touch
