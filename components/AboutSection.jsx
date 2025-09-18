@@ -1,3 +1,6 @@
+
+"use client"; // Added for potential client-side enhancements
+
 import React from "react";
 
 const AboutSection = () => (
@@ -13,12 +16,12 @@ const AboutSection = () => (
       playsInline
       className="absolute inset-0 object-cover w-full h-full"
     >
-      <source src="/media/placeholder-video.mp4" type="video/mp4" />
+      <source src="/about.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
 
     {/* Overlay for readability */}
-    <div className="absolute inset-0 bg-gradient-to-top from-[rgba(150,150,150,0.2)] to-[rgba(50,50,50,0.3)] dark:from-[rgba(120,120,120,0.2)] dark:to-[rgba(30,30,30,0.4)]"></div>
+    <div className="absolute inset-0 bg-gradient-to-br from-[rgba(0,0,0,0.5)] to-[rgba(50,50,50,0.7)] dark:from-[rgba(20,20,20,0.5)] dark:to-[rgba(30,30,30,0.7)]"></div>
 
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-40 relative z-10">
       <div className="grid lg:grid-cols-12 gap-20">

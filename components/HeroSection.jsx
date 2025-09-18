@@ -58,7 +58,7 @@ const HeroSection = ({ scrollToSection }) => {
           </Link>
 
           <Link
-            href="/resume.pdf"
+            href="/TahirCV.pdf"
             download
             className="inline-flex items-center gap-3 px-10 py-5 border border-neutral-300 dark:border-neutral-700 text-neutral-300 dark:text-neutral-300 text-sm font-light rounded-none hover:bg-white dark:hover:bg-neutral-800 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-500"
             aria-label="Download my resume"

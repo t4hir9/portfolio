@@ -43,9 +43,10 @@ const ProjectsClient = () => {
       role: "Media Expert",
       duration: "Ongoing",
       tech: ["Photoshop", "Premiere Pro", "After Effects", "DaVinci Resolve"],
-      images: ["/background2.JPG", "/background3.JPG", "/background.JPG","/54.jpg","/45.jpg","/24.jpg","/8.jpg","/6.jpg","/14.jpg"],
+      images: ["/background2.JPG", "/background3.JPG", "/background.JPG","/photos/17.jpg","/photos/27.jpg","/photos/29.jpg","/photos/52.jpg","/photos/54.jpg","/photos/65.jpg","/photos/61.jpg"],
       fallbackIcon: "🎥",
-      url: "/photos",
+      pictureUrl: "/photos",
+      videoUrl:"/videos",
     },
   ];
 

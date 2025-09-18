@@ -11,7 +11,7 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
     if (project.title === "Media samples" && project.images) {
       const interval = setInterval(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project.images.length);
-      }, 2000); // Change image every 2 seconds
+      }, 3000); // Change image every 3 seconds
 
       return () => clearInterval(interval); // Cleanup interval on unmount
     }
@@ -74,17 +74,42 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
             </span>
           ))}
         </div>
-        {project.url && (
-          <Link
-            href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-200 group"
-            aria-label={`View ${project.title}`}
-          >
-            <span>View Project</span>
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
-          </Link>
+        {project.title === "Media samples" ? (
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              href={project.videoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-200 group"
+              aria-label="View video samples"
+            >
+              <span>Video Samples</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+            </Link>
+            <Link
+              href={project.pictureUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-200 group"
+              aria-label="View picture samples"
+            >
+              <span>Picture Samples</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+            </Link>
+          </div>
+        ) : (
+          project.url && (
+            <Link
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-200 group"
+              aria-label={`View ${project.title}`}
+            >
+              <span>View Project</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+            </Link>
+          )
         )}
       </div>
     </div>

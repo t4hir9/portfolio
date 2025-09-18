@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    template: '%s | Abdullahi Tahir Adamu',
-    default: 'Abdullahi Tahir Adamu'
+    template: "%s | Abdullahi Tahir Adamu",
+    default: "Abdullahi Tahir Adamu",
   },
   description:
     "Abdullahi Tahir Adamu is a Front-End Developer and Media Expert based in Nigeria, specializing in React, Next.js, JavaScript, and building responsive web applications for global clients. He also provides top-notch media solutions including photography, videography, and social media marketing.",
@@ -80,6 +80,8 @@ export default function RootLayout({ children }) {
     sameAs: [
       "https://www.linkedin.com/in/iamt4hir9/",
       "https://github.com/t4hir9",
+      "https://instagram.com/iamt4hir9",
+      "https://twitter.com/iamt4hir9",
     ],
     skills: [
       "React",
@@ -91,7 +93,7 @@ export default function RootLayout({ children }) {
       "Web Development",
       "Photography",
       "Videography",
-      "Social Media Marketing"
+      "Social Media Marketing",
     ],
     worksFor: {
       "@type": "Organization",
@@ -102,18 +104,6 @@ export default function RootLayout({ children }) {
       addressLocality: "Nigeria",
     },
   };
-
-  return (
-    <html lang="en">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
 
   return (
     <html lang="en" suppressHydrationWarning>
