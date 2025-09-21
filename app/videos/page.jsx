@@ -12,7 +12,7 @@ export default function VideosPage() {
     { name: "Culverin", src: "/videos/culverin.MP4" },
     { name: "From This Side", src: "/videos/FTS.MP4" },
     { name: "VFX", src: "/videos/reel.MP4" },
-    { name: "Short film- Rubix art soiree", src: "/videos/rubix.MOV" },
+    { name: "Short film- Rubix art soiree", src: "/videos/rubix.MP4" },
     { name: "scribble", src: "/videos/scribble.MP4" },
     { name: "Titan Perfomance", src: "/videos/titan.MP4" },
   ];
