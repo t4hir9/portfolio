@@ -6,7 +6,7 @@ import React from "react";
 const AboutSection = () => (
   <section
     id="about"
-    className="min-h-screen w-full relative scroll-mt-[150px]"
+    className="min-h-screen w-full relative scroll-mt-[100px]"
   >
     {/* Video Background */}
     <video

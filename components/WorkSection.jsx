@@ -55,7 +55,7 @@ const WorkSection = () => {
     <section id="work" className="pb-40 scroll-mt-[150px]">
       <div className="mb-16">
         <h2 className="text-4xl md:text-5xl font-extralight text-neutral-900 dark:text-neutral-100 mb-12 tracking-tight">
-          Selected Projects
+          Projects
         </h2>
 
         <p className="text-xl text-neutral-600 dark:text-neutral-300 leading-relaxed mb-16 max-w-3xl font-light">
