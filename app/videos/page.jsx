@@ -11,10 +11,10 @@ export default function VideosPage() {
   const videos = [
     { name: "Culverin", src: "/videos/culverin.MP4" },
     { name: "From This Side", src: "/videos/FTS.MP4" },
-    { name: "VFX", src: "/videos/reel.MP4" },
-    { name: "Short film- Rubix art soiree", src: "/videos/rubix.MP4" },
-    { name: "scribble", src: "/videos/scribble.MP4" },
-    { name: "Titan Perfomance", src: "/videos/titan.MP4" },
+    { name: "VFX", src: "/videos/Reel.MP4" },
+    { name: "Short film- Rubix art soiree", src: "/videos/Rubix.MP4" },
+    { name: "scribble", src: "/videos/Scribble.MP4" },
+    { name: "Titan Perfomance", src: "/videos/Titan.MP4" },
   ];
 
   // Initialize muted state array with true for each video

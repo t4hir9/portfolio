@@ -56,14 +56,6 @@ export default function Footer({ homepage = true }) {
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-gray-900 dark:bg-white transition-all duration-300 group-hover:w-full" />
             </Link>
             <Link
-              href="mailto:abdultahir779@gmail.com"
-              className="text-sm text-gray-500 dark:text-neutral-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 relative group flex items-center gap-2"
-            >
-              <Mail className="w-4 h-4" />
-              <span>Email</span>
-              <span className="absolute -bottom-1 left-0 w-0 h-px bg-gray-900 dark:bg-white transition-all duration-300 group-hover:w-full" />
-            </Link>
-            <Link
               href="https://instagram.com/iamt4hir9"
               target="_blank"
               rel="noopener noreferrer"
@@ -73,23 +65,9 @@ export default function Footer({ homepage = true }) {
               <span>Instagram</span>
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-gray-900 dark:bg-white transition-all duration-300 group-hover:w-full" />
             </Link>
-            <Link
-              href="https://twitter.com/iamt4hir9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-gray-500 dark:text-neutral-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 relative group flex items-center gap-2"
-            >
-              <Twitter className="w-4 h-4" />
-              <span>Twitter</span>
-              <span className="absolute -bottom-1 left-0 w-0 h-px bg-gray-900 dark:bg-white transition-all duration-300 group-hover:w-full" />
-            </Link>
           </div>
 
           <div className="hidden md:block w-px h-6 bg-gray-200 dark:bg-neutral-700"></div>
-
-          <div className="text-xs text-gray-400 dark:text-neutral-400 font-light tracking-wider">
-            MADE WITH ❤️ BY TAHIR
-          </div>
         </div>
       </div>
     </footer>
