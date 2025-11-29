@@ -53,13 +53,13 @@ const WorkSection = () => {
       fallbackIcon: "₿",
     },
     {
-      title: "Media & Cinematography Samples",
+      title: "Media samples",
       description:
-        "A collection of professional media projects including photography and videography. Showcasing cinematic ads, tech visuals, and drone cinematography for brand campaigns.",
-      year: "2019 - Present",
-      role: "Media Expert & Cinematographer",
+        "A collection of media projects including photography and videography samples showcasing my skills and creativity.",
+      year: "2020 - Present",
+      role: "Media Expert",
       duration: "Ongoing",
-      tech: ["Premiere Pro", "After Effects", "DaVinci Resolve", "Drone Cinematography"],
+      tech: ["Photoshop", "Premiere Pro", "After Effects", "DaVinci Resolve"],
       images: ["/background2.JPG", "/background3.JPG", "/background.JPG","/photos/17.jpg","/photos/27.jpg","/photos/29.jpg","/photos/52.jpg","/photos/54.jpg","/photos/65.jpg","/photos/61.jpg"],
       fallbackIcon: "🎥",
       pictureUrl: "/photos",
