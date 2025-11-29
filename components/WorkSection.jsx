@@ -40,6 +40,7 @@ const WorkSection = () => {
       role: "Frontend Developer",
       duration: "Ongoing",
       tech: ["React Native", "Node.js", "Real-time Features", "Payment Integration"],
+      image: "/boride.png",
       fallbackIcon: "🚗",
     },
     {
@@ -50,6 +51,7 @@ const WorkSection = () => {
       role: "Frontend Developer",
       duration: "8 weeks",
       tech: ["Web3.js", "React", "Ethereum", "Blockchain"],
+      image: "/crypto-tracker.png",
       fallbackIcon: "₿",
     },
     {
