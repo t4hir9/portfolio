@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import WorkSection from "@/components/WorkSection";
+import CertificationsSection from "@/components/CertificationsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -54,6 +55,7 @@ export default function Home() {
           <HeroSection scrollToSection={scrollToSection} />
           <WorkSection />
           <AboutSection />
+          <CertificationsSection />
           <ContactSection />
         </main>
       </div>
