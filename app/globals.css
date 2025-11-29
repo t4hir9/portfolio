@@ -55,13 +55,13 @@
   --secondary-foreground: oklch(0.985, 0, 0);
   --muted: oklch(0.65, 0, 0);
   --muted-foreground: oklch(0.985, 0, 0);
-  --accent: #00d4ff;
+  --accent: #ffffff;
   --accent-foreground: oklch(0, 0, 0);
   --destructive: oklch(0.65, 0.2, 25);
   --destructive-foreground: oklch(0.985, 0, 0);
   --border: oklch(0.65, 0, 0);
   --input: oklch(0.65, 0, 0);
-  --ring: #00d4ff;
+  --ring: #ffffff;
   --chart-1: oklch(0.7, 0.2, 29.234);
   --chart-2: oklch(0.65, 0, 0);
   --chart-3: oklch(0.6, 0.15, 29.234);
@@ -90,13 +90,13 @@
   --secondary-foreground: oklch(0.985, 0, 0);
   --muted: oklch(0.5, 0, 0);
   --muted-foreground: oklch(0.8, 0, 0);
-  --accent: #00d4ff;
+  --accent: #ffffff;
   --accent-foreground: oklch(0, 0, 0);
   --destructive: oklch(0.6, 0.2, 25);
   --destructive-foreground: oklch(0.985, 0, 0);
   --border: oklch(0.574, 0, 0);
   --input: oklch(0.574, 0, 0);
-  --ring: #00d4ff;
+  --ring: #ffffff;
   --chart-1: oklch(0.627, 0.2, 29.234);
   --chart-2: oklch(0.574, 0, 0);
   --chart-3: oklch(0.5, 0.15, 29.234);
@@ -149,10 +149,10 @@ html {
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
   }
   50% {
-    box-shadow: 0 0 30px rgba(0, 212, 255, 0.6);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
   }
 }
 
@@ -169,11 +169,11 @@ html {
 }
 
 .accent-button {
-  @apply relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-medium rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/30 hover:-translate-y-1 active:translate-y-0;
+  @apply relative inline-flex items-center gap-3 px-8 py-4 bg-white text-black font-medium rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-white/50 hover:-translate-y-1 active:translate-y-0 dark:bg-white dark:hover:shadow-white/30;
 }
 
 .accent-button::before {
-  @apply absolute inset-0 bg-gradient-to-r from-cyan-300 to-blue-400 opacity-0 transition-opacity duration-300;
+  @apply absolute inset-0 bg-gradient-to-r from-white to-gray-100 opacity-0 transition-opacity duration-300;
   content: '';
 }
 
@@ -186,9 +186,9 @@ html {
 }
 
 .project-card-hover {
-  @apply transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/20 hover:-translate-y-2;
+  @apply transition-all duration-300 hover:shadow-2xl hover:shadow-white/20 hover:-translate-y-2;
 }
 
 .tech-badge {
-  @apply text-xs font-mono px-3 py-1.5 bg-gradient-to-r from-neutral-100 to-neutral-200 dark:from-neutral-800 dark:to-neutral-700 text-neutral-700 dark:text-neutral-300 rounded-md transition-all duration-200 hover:from-cyan-100 hover:to-cyan-50 dark:hover:from-cyan-900/40 dark:hover:to-cyan-800/30 hover:text-cyan-600 dark:hover:text-cyan-300;
+  @apply text-xs font-mono px-3 py-1.5 bg-gradient-to-r from-neutral-100 to-neutral-200 dark:from-neutral-800 dark:to-neutral-700 text-neutral-700 dark:text-neutral-300 rounded-md transition-all duration-200 hover:from-white hover:to-gray-100 dark:hover:from-white/20 dark:hover:to-white/10 hover:text-black dark:hover:text-white;
 }

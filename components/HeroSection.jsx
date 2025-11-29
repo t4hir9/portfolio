@@ -59,7 +59,7 @@ const HeroSection = ({ scrollToSection }) => {
           <Link
             href="/TahirCV.pdf"
             download
-            className="group inline-flex items-center gap-3 px-8 py-4 border-2 border-cyan-400 text-cyan-400 text-sm font-medium rounded-lg hover:bg-cyan-400 hover:text-black hover:shadow-xl hover:shadow-cyan-500/30 hover:-translate-y-1 transition-all duration-300"
+            className="group inline-flex items-center gap-3 px-8 py-4 border-2 border-white text-white text-sm font-medium rounded-lg hover:bg-white hover:text-black hover:shadow-xl hover:shadow-white/30 hover:-translate-y-1 transition-all duration-300"
             aria-label="Download my resume"
           >
             <Download className="w-4 h-4" />

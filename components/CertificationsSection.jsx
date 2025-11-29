@@ -47,7 +47,7 @@ const CertificationsSection = () => {
       <div className="max-w-5xl">
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-4">
-            <Award className="w-6 h-6 text-cyan-400" />
+            <Award className="w-6 h-6 text-white" />
             <h2 className="text-4xl md:text-5xl font-extralight text-neutral-900 dark:text-neutral-100 tracking-tight">
               Certifications
             </h2>
@@ -61,15 +61,15 @@ const CertificationsSection = () => {
           {certifications.map((cert, index) => (
             <div
               key={index}
-              className="group p-6 bg-gradient-to-br from-neutral-50 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800 border border-neutral-200/50 dark:border-neutral-700/50 rounded-lg hover:border-cyan-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10 hover:-translate-y-1"
+              className="group p-6 bg-gradient-to-br from-neutral-50 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800 border border-neutral-200/50 dark:border-neutral-700/50 rounded-lg hover:border-white/50 transition-all duration-300 hover:shadow-lg hover:shadow-white/10 hover:-translate-y-1"
             >
               <div className="flex items-start justify-between mb-3">
                 <span className="text-3xl">{cert.icon}</span>
-                <span className="text-xs font-mono text-cyan-500 dark:text-cyan-400 bg-cyan-500/10 px-2 py-1 rounded">
+                <span className="text-xs font-mono text-white dark:text-white bg-white/20 px-2 py-1 rounded">
                   {cert.year}
                 </span>
               </div>
-              <h3 className="text-sm md:text-base font-medium text-neutral-900 dark:text-neutral-100 leading-tight group-hover:text-cyan-500 dark:group-hover:text-cyan-400 transition-colors duration-200">
+              <h3 className="text-sm md:text-base font-medium text-neutral-900 dark:text-neutral-100 leading-tight group-hover:text-white transition-colors duration-200">
                 {cert.title}
               </h3>
             </div>

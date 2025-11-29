@@ -75,7 +75,7 @@ const ContactForm = () => {
           value={formData.name}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all duration-200"
+          className="w-full px-4 py-3 bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg focus:outline-none focus:border-white focus:ring-2 focus:ring-white/20 transition-all duration-200"
           placeholder="Your name"
         />
       </div>
@@ -91,7 +91,7 @@ const ContactForm = () => {
           value={formData.email}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all duration-200"
+          className="w-full px-4 py-3 bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg focus:outline-none focus:border-white focus:ring-2 focus:ring-white/20 transition-all duration-200"
           placeholder="your@email.com"
         />
       </div>
@@ -107,7 +107,7 @@ const ContactForm = () => {
           value={formData.subject}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all duration-200"
+          className="w-full px-4 py-3 bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg focus:outline-none focus:border-white focus:ring-2 focus:ring-white/20 transition-all duration-200"
           placeholder="Project inquiry"
         />
       </div>
@@ -123,7 +123,7 @@ const ContactForm = () => {
           onChange={handleChange}
           required
           rows="5"
-          className="w-full px-4 py-3 bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all duration-200 resize-none"
+          className="w-full px-4 py-3 bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg focus:outline-none focus:border-white focus:ring-2 focus:ring-white/20 transition-all duration-200 resize-none"
           placeholder="Tell me about your project..."
         />
       </div>

@@ -28,7 +28,7 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
             </div>
           ) : (
             <div
-              className="w-full h-64 bg-cover bg-center bg-no-repeat rounded-lg transition-all duration-500 border-2 border-cyan-500/30 hover:border-cyan-400"
+              className="w-full h-64 bg-cover bg-center bg-no-repeat rounded-lg transition-all duration-500 border-2 border-white/30 hover:border-white"
               style={{ backgroundImage: `url(${project.images[currentImageIndex]})` }}
               onError={() => handleImageError(index)}
             ></div>
@@ -42,7 +42,7 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-64 object-cover rounded-lg border-2 border-cyan-500/30 hover:border-cyan-400 transition-all duration-300"
+              className="w-full h-64 object-cover rounded-lg border-2 border-white/30 hover:border-white transition-all duration-300"
               onError={() => handleImageError(index)}
             />
           )
@@ -75,7 +75,7 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href={project.videoUrl}
-              className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-medium rounded-lg hover:shadow-lg hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-200"
+              className="group inline-flex items-center gap-2 px-6 py-3 bg-white text-black font-medium rounded-lg hover:shadow-lg hover:shadow-white/40 hover:-translate-y-0.5 transition-all duration-200"
               aria-label="View video samples"
             >
               <span>Video Samples</span>
@@ -83,7 +83,7 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
             </Link>
             <Link
               href={project.pictureUrl}
-              className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-medium rounded-lg hover:shadow-lg hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-200"
+              className="group inline-flex items-center gap-2 px-6 py-3 bg-white text-black font-medium rounded-lg hover:shadow-lg hover:shadow-white/40 hover:-translate-y-0.5 transition-all duration-200"
               aria-label="View picture samples"
             >
               <span>Picture Samples</span>
@@ -94,7 +94,7 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
           project.url && (
             <Link
               href={project.url}
-              className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-medium rounded-lg hover:shadow-lg hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-200"
+              className="group inline-flex items-center gap-2 px-6 py-3 bg-white text-black font-medium rounded-lg hover:shadow-lg hover:shadow-white/40 hover:-translate-y-0.5 transition-all duration-200"
               aria-label={`View ${project.title}`}
             >
               <span>View Project</span>
