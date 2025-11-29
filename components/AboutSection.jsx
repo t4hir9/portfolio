@@ -37,7 +37,7 @@ const AboutSection = () => (
               I specialize in creating digital experiences that are not just visually appealing, but also performant, accessible, and user-friendly. My expertise spans Web3 interfaces, wallet integrations, and decentralized dashboards. I&apos;ve built responsive web applications with real-time features and secure payment integrations, achieving a 40% performance improvement through optimization and lazy loading.
             </p>
             <p>
-              Beyond development, I&apos;m also a skilled cinematographer and media expert producing cinematic ads and tech visuals using Adobe Premiere Pro and DaVinci Resolve. I&apos;ve boosted brand engagement by 25%+ through strategic content creation and delivered drone cinematography for campaigns and events.
+              When I&apos;m not coding or creating magic with my camera, you&apos;ll find me exploring new design trends, making sure my ideas and vision are as sharp and sturdy as the world adapts.
             </p>
           </div>
         </div>
