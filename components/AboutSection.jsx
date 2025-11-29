@@ -31,10 +31,10 @@ const AboutSection = () => (
           </h2>
           <div className="space-y-8 text-lg text-neutral-300 dark:text-neutral-300 leading-relaxed font-light">
             <p>
-              I&apos;m Abdullahi Tahir Adamu, a Front-End Developer with 6+ years of experience building modern web applications using React, Next.js, TypeScript, and Tailwind CSS. Based in Kaduna, Nigeria, I craft digital experiences that are both beautiful and functional, focusing on clean code and thoughtful design.
+              I&apos;m Abdullahi Tahir Adamu, a React developer and Next.js specialist with 6+ years of experience building modern web applications. Based in Nigeria, I&apos;m a senior frontend developer specializing in Web3 interfaces, responsive web design, and scalable JavaScript applications. I also excel as a professional video editor and cinematographer, bringing creative storytelling to digital products.
             </p>
             <p>
-              I specialize in creating digital experiences that are not just visually appealing, but also performant, accessible, and user-friendly. My expertise spans Web3 interfaces, wallet integrations, and decentralized dashboards. I&apos;ve built responsive web applications with real-time features and secure payment integrations, achieving a 40% performance improvement through optimization and lazy loading.
+              As a frontend developer for hire, I specialize in creating digital experiences that are visually stunning, performant, and accessible. My expertise spans Web3 development, wallet integrations, decentralized dashboards, and React Native mobile apps. I've built responsive web applications with real-time features achieving 40% performance improvements. Beyond frontend development, my video editing and cinematography skills add creative dimension to brand storytelling and digital marketing.
             </p>
             <p>
               When I&apos;m not coding or creating magic with my camera, you&apos;ll find me exploring new design trends, making sure my ideas and vision are as sharp and sturdy as the world adapts.

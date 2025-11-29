@@ -51,10 +51,10 @@ const PhotosClientWrapper = ({ initialImages }) => {
 
             <div>
               <h1 className="text-4xl md:text-5xl font-extralight text-neutral-900 dark:text-neutral-100 mb-12 tracking-tight">
-                Photos
+                Professional Photography Portfolio
               </h1>
                 <p className="text-xl text-neutral-600 dark:text-neutral-300 leading-relaxed mb-16 max-w-3xl font-light">
-                    A curated selection of my photography work, capturing moments and stories through the lens.
+                    Professional photography and visual content by Abdullahi Tahir Adamu - a skilled cinematographer and media expert from Nigeria. Explore a curated selection of photography and videography work showcasing creative visual storytelling and professional production quality.
                 </p>
             </div>
           </header>

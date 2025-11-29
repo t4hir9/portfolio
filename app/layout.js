@@ -7,10 +7,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: {
     template: "%s | Abdullahi Tahir Adamu",
-    default: "Abdullahi Tahir Adamu",
+    default: "Abdullahi Tahir Adamu | React Developer & Cinematographer Nigeria",
   },
   description:
-    "Abdullahi Tahir Adamu is a Front-End Developer and Media Expert based in Nigeria, specializing in React, Next.js, JavaScript, and building responsive web applications for global clients. He also provides top-notch media solutions including photography, videography, and social media marketing.",
+    "React developer and video editor in Nigeria with 6+ years of experience. Freelance Next.js developer specializing in Web3 interfaces, responsive web apps, and professional cinematography. Frontend developer for hire with media production expertise.",
+  keywords: ["React developer Nigeria", "Next.js developer freelance", "Frontend developer Web3", "Video editor cinematographer", "Web developer Nigeria", "Professional video editing", "React and Next.js specialist", "Frontend developer for hire"],
   metadataBase: new URL("https://tahiradamu.info"),
   alternates: {
     canonical: "/",

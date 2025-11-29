@@ -3,9 +3,10 @@ import ProjectsClient from "@/components/ProjectClient";
 // Metadata for the Projects Page
 
 export const metadata = {
-  title: "All Projects",
+  title: "Projects | React Developer & Frontend Specialist",
   description:
-    "Explore the portfolio of Abdullahi Tahir Adamu, a Front-End Developer and Media Expert in Nigeria specializing in React, Next.js, Tailwind CSS, and JavaScript. View modern web development projects built for global clients.",
+    "Explore projects by Abdullahi Tahir Adamu - a React and Next.js developer from Nigeria. Senior frontend developer showcasing Web3 apps, ride-hailing platforms, crypto trackers, and responsive web applications built with modern JavaScript frameworks.",
+  keywords: ["React projects", "Next.js applications", "Frontend development", "Web3 developer", "React Native apps", "Responsive web design", "JavaScript projects"],
   robots: {
     index: true,
     follow: true,
