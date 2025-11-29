@@ -31,13 +31,13 @@ const AboutSection = () => (
           </h2>
           <div className="space-y-8 text-lg text-neutral-300 dark:text-neutral-300 leading-relaxed font-light">
             <p>
-              Hello! I&apos;m Tahir, a passionate Front-End Developer based in Nigeria. With a keen eye for design and a love for coding, I bring ideas to life on the web.
+              Front-End Developer with 6+ years of experience building modern web applications using React, Next.js, TypeScript, and Tailwind CSS. I&apos;m based in Kaduna, Nigeria, with a keen eye for design and a passion for creating functional, beautiful digital experiences.
             </p>
             <p>
-              I specialize in creating digital experiences that are not just visually appealing, but also performant, accessible, and user-friendly. Every line of code I write and every story or vision I bring to life is intentional.
+              I specialize in Web3 interfaces, wallet integrations, and decentralized dashboards. My work spans responsive web applications, real-time features, and secure payment integrations. I&apos;ve improved app performance by 40% through optimization and lazy loading techniques.
             </p>
             <p>
-              When I&apos;m not coding or creating magic with my camera, you&apos;ll find me exploring new design trends, making sure my ideas and vision are as sharp and sturdy as the world adapts.
+              Beyond development, I&apos;m also a skilled cinematographer producing cinematic visuals for brand growth. When I&apos;m not coding, you&apos;ll find me creating compelling visual content using Adobe Premiere Pro and DaVinci Resolve.
             </p>
           </div>
         </div>
@@ -49,10 +49,10 @@ const AboutSection = () => (
           </h3>
           <div className="space-y-8">
             {[
-              { category: "Frontend", skills: ["HTML", "JavaScript", "React", "Next.js"] },
-              { category: "Styling", skills: ["Tailwind CSS", "CSS-in-JS"] },
-              { category: "Tools", skills: ["Git", "WordPress", "VS Code", "Vercel"] },
-              { category: "Media", skills: ["Photoshop", "DaVinci Resolve", "Premiere Pro"] }
+              { category: "Technical", skills: ["JavaScript", "TypeScript", "React", "Next.js", "React Native", "Python", "C++", "Git"] },
+              { category: "Web3", skills: ["Web3.js", "Ethereum", "Wallet Integration", "dApp Prototyping"] },
+              { category: "Styling & Tools", skills: ["Tailwind CSS", "VS Code", "Vercel", "TypeScript"] },
+              { category: "Creative", skills: ["Premiere Pro", "After Effects", "DaVinci Resolve", "Photography", "Drone Cinematography"] }
             ].map((group) => (
               <div key={group.category} className="group/skill">
                 <div className="grid grid-cols-12 gap-4 items-start">
