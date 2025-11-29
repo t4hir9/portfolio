@@ -31,13 +31,13 @@ const AboutSection = () => (
           </h2>
           <div className="space-y-8 text-lg text-neutral-300 dark:text-neutral-300 leading-relaxed font-light">
             <p>
-              Front-End Developer with 6+ years of experience building modern web applications using React, Next.js, TypeScript, and Tailwind CSS. I&apos;m based in Kaduna, Nigeria, with a keen eye for design and a passion for creating functional, beautiful digital experiences.
+              I&apos;m Abdullahi Tahir Adamu, a Front-End Developer with 6+ years of experience building modern web applications using React, Next.js, TypeScript, and Tailwind CSS. Based in Kaduna, Nigeria, I craft digital experiences that are both beautiful and functional, focusing on clean code and thoughtful design.
             </p>
             <p>
-              I specialize in Web3 interfaces, wallet integrations, and decentralized dashboards. My work spans responsive web applications, real-time features, and secure payment integrations. I&apos;ve improved app performance by 40% through optimization and lazy loading techniques.
+              I specialize in creating digital experiences that are not just visually appealing, but also performant, accessible, and user-friendly. My expertise spans Web3 interfaces, wallet integrations, and decentralized dashboards. I&apos;ve built responsive web applications with real-time features and secure payment integrations, achieving a 40% performance improvement through optimization and lazy loading.
             </p>
             <p>
-              Beyond development, I&apos;m also a skilled cinematographer producing cinematic visuals for brand growth. When I&apos;m not coding, you&apos;ll find me creating compelling visual content using Adobe Premiere Pro and DaVinci Resolve.
+              Beyond development, I&apos;m also a skilled cinematographer and media expert producing cinematic ads and tech visuals using Adobe Premiere Pro and DaVinci Resolve. I&apos;ve boosted brand engagement by 25%+ through strategic content creation and delivered drone cinematography for campaigns and events.
             </p>
           </div>
         </div>

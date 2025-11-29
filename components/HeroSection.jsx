@@ -34,8 +34,7 @@ const HeroSection = ({ scrollToSection }) => {
 
         <div className="max-w-2xl mb-16">
           <p className="text-xl md:text-2xl text-neutral-300 dark:text-neutral-300 leading-relaxed font-light mb-8">
-            I craft digital experiences that are both beautiful and functional,
-            focusing on clean code, thoughtful design, and amazing visionary.
+            Front-End Developer with 6+ years of experience building modern web applications. I specialize in React, Next.js, TypeScript, and Web3 interfaces. Also a skilled cinematographer producing cinematic visuals for brand growth.
           </p>
 
           <div className="flex items-center gap-3 text-sm text-neutral-400 dark:text-neutral-400 font-light">
