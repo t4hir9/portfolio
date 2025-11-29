@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Download, MapPin, Sun, Moon } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 
@@ -36,11 +36,6 @@ const HeroSection = ({ scrollToSection }) => {
           <p className="text-xl md:text-2xl text-neutral-300 dark:text-neutral-300 leading-relaxed font-light mb-8">
             Front-End Developer with 6+ years of experience building modern web applications. I specialize in React, Next.js, TypeScript, and Web3 interfaces. Also a skilled cinematographer producing cinematic visuals for brand growth.
           </p>
-
-          <div className="flex items-center gap-3 text-sm text-neutral-400 dark:text-neutral-400 font-light">
-            <MapPin className="w-4 h-4" />
-            <span>Based in Nigeria</span>
-          </div>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4">
