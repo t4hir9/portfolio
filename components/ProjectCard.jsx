@@ -20,29 +20,29 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
   return (
     <div className="flex flex-col md:flex-row gap-6 md:gap-12">
       {/* Image/Slideshow */}
-      <div className="flex-1">
+      <div className="flex-1 project-card-hover">
         {project.title === "Media samples" && project.images ? (
           imageErrors[index] ? (
-            <div className="w-full h-64 bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center text-4xl">
+            <div className="w-full h-64 bg-gradient-to-br from-neutral-200 to-neutral-300 dark:from-neutral-800 dark:to-neutral-900 flex items-center justify-center text-5xl rounded-lg">
               {project.fallbackIcon}
             </div>
           ) : (
             <div
-              className="w-full h-64 bg-cover bg-center bg-no-repeat rounded-lg transition-all duration-500"
+              className="w-full h-64 bg-cover bg-center bg-no-repeat rounded-lg transition-all duration-500 border-2 border-cyan-500/30 hover:border-cyan-400"
               style={{ backgroundImage: `url(${project.images[currentImageIndex]})` }}
               onError={() => handleImageError(index)}
             ></div>
           )
         ) : (
           imageErrors[index] ? (
-            <div className="w-full h-64 bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center text-4xl">
+            <div className="w-full h-64 bg-gradient-to-br from-neutral-200 to-neutral-300 dark:from-neutral-800 dark:to-neutral-900 flex items-center justify-center text-5xl rounded-lg">
               {project.fallbackIcon}
             </div>
           ) : (
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-64 object-cover rounded-lg"
+              className="w-full h-64 object-cover rounded-lg border-2 border-cyan-500/30 hover:border-cyan-400 transition-all duration-300"
               onError={() => handleImageError(index)}
             />
           )
@@ -64,12 +64,9 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
           <span>•</span>
           <span>{project.duration}</span>
         </div>
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-2 mb-6">
           {project.tech.map((tech, i) => (
-            <span
-              key={i}
-              className="text-sm text-neutral-700 dark:text-neutral-300 font-mono px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-sm"
-            >
+            <span key={i} className="tech-badge">
               {tech}
             </span>
           ))}
@@ -78,9 +75,7 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href={project.videoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-200 group"
+              className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-medium rounded-lg hover:shadow-lg hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-200"
               aria-label="View video samples"
             >
               <span>Video Samples</span>
@@ -88,9 +83,7 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
             </Link>
             <Link
               href={project.pictureUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-200 group"
+              className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-medium rounded-lg hover:shadow-lg hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-200"
               aria-label="View picture samples"
             >
               <span>Picture Samples</span>
@@ -101,9 +94,7 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
           project.url && (
             <Link
               href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-200 group"
+              className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-400 to-blue-500 text-black font-medium rounded-lg hover:shadow-lg hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-200"
               aria-label={`View ${project.title}`}
             >
               <span>View Project</span>

@@ -45,8 +45,8 @@ const HeroSection = ({ scrollToSection }) => {
 
         <div className="flex flex-col sm:flex-row gap-4">
           <Link
-            href={"/projects"}
-            className="group inline-flex items-center gap-3 px-10 py-5 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 text-sm font-light rounded-none hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-500 hover:shadow-2xl hover:shadow-neutral-900/20 dark:hover:shadow-neutral-100/20 hover:-translate-y-0.5"
+            href="/projects"
+            className="accent-button"
             aria-label="View my selected work portfolio"
           >
             <span>View All Projects</span>
@@ -59,7 +59,7 @@ const HeroSection = ({ scrollToSection }) => {
           <Link
             href="/TahirCV.pdf"
             download
-            className="inline-flex items-center gap-3 px-10 py-5 border border-neutral-300 dark:border-neutral-700 text-neutral-300 dark:text-neutral-300 text-sm font-light rounded-none hover:bg-white dark:hover:bg-neutral-800 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-500"
+            className="group inline-flex items-center gap-3 px-8 py-4 border-2 border-cyan-400 text-cyan-400 text-sm font-medium rounded-lg hover:bg-cyan-400 hover:text-black hover:shadow-xl hover:shadow-cyan-500/30 hover:-translate-y-1 transition-all duration-300"
             aria-label="Download my resume"
           >
             <Download className="w-4 h-4" />
