@@ -23,13 +23,13 @@ const HeroSection = ({ scrollToSection }) => {
           Available for new projects
         </div>
 
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-neutral-100 dark:text-neutral-100 leading-[0.9] mb-8 tracking-tight">
-          Front-End Developer
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-neutral-100 dark:text-neutral-100 leading-[0.9] mb-8 tracking-tight animate-cinematic-slide">
+          <span className="inline-block animate-floating">Front-End Developer</span>
           <br />
           <span className="text-neutral-400 dark:text-neutral-400 italic font-thin">
             &
           </span>{" "}
-          Media Expert
+          <span className="inline-block animate-floating" style={{ animationDelay: "0.2s" }}>Media Expert</span>
         </h1>
 
         <div className="max-w-2xl mb-16">

@@ -76,13 +76,13 @@ const WorkSection = () => {
   return (
     <section id="work" className="pb-40 scroll-mt-[150px]">
       <div className="mb-16">
-        <h2 className="text-4xl md:text-5xl font-extralight text-neutral-900 dark:text-neutral-100 mb-12 tracking-tight">
+        <h2 className="section-title-cinematic mb-4">
           Projects
         </h2>
+        <div className="cinematic-divider mb-8"></div>
 
-        <p className="text-xl text-neutral-600 dark:text-neutral-300 leading-relaxed mb-16 max-w-3xl font-light">
-          Recent projects that showcase thoughtful design and clean
-          implementation.
+        <p className="text-xl text-neutral-600 dark:text-neutral-300 leading-relaxed mb-16 max-w-3xl font-light animate-fade-in-up">
+          Recent projects that showcase thoughtful design and clean implementation. Each project represents a blend of creative problem-solving and technical excellence tailored to deliver results.
         </p>
       </div>
 

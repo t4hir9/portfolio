@@ -18,7 +18,7 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
   }, [project.title, project.images]);
 
   return (
-    <div className="flex flex-col md:flex-row gap-6 md:gap-12">
+    <div className="flex flex-col md:flex-row gap-6 md:gap-12 animate-fade-in-up">
       {/* Image/Slideshow */}
       <div className="flex-1 project-card-hover">
         {project.title === "Media samples" && project.images ? (
@@ -28,7 +28,7 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
             </div>
           ) : (
             <div
-              className="w-full h-64 bg-cover bg-center bg-no-repeat rounded-lg transition-all duration-500 border-2 border-white/30 hover:border-white"
+              className="w-full h-64 bg-cover bg-center bg-no-repeat rounded-lg transition-all duration-500 border-2 border-white/30 hover:border-white project-image-enhanced"
               style={{ backgroundImage: `url(${project.images[currentImageIndex]})` }}
               onError={() => handleImageError(index)}
             ></div>
@@ -42,7 +42,7 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-64 object-cover rounded-lg border-2 border-white/30 hover:border-white transition-all duration-300"
+              className="w-full h-64 object-cover rounded-lg border-2 border-white/30 hover:border-white transition-all duration-300 project-image-enhanced"
               onError={() => handleImageError(index)}
             />
           )
