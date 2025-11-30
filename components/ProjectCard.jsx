@@ -6,14 +6,21 @@ import Link from "next/link";
 
 const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [nextImageIndex, setNextImageIndex] = useState(1);
+  const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
     if (project.title === "Media samples" && project.images) {
       const interval = setInterval(() => {
-        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project.images.length);
-      }, 3000); // Change image every 3 seconds
+        setFadeOut(true);
+        setTimeout(() => {
+          setCurrentImageIndex((prev) => (prev + 1) % project.images.length);
+          setNextImageIndex((prev) => (prev + 1) % project.images.length);
+          setFadeOut(false);
+        }, 250);
+      }, 4000);
 
-      return () => clearInterval(interval); // Cleanup interval on unmount
+      return () => clearInterval(interval);
     }
   }, [project.title, project.images]);
 
@@ -27,11 +34,14 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
               {project.fallbackIcon}
             </div>
           ) : (
-            <div
-              className="w-full h-64 bg-cover bg-center bg-no-repeat rounded-lg transition-all duration-500 border-2 border-white/30 hover:border-white project-image-enhanced"
-              style={{ backgroundImage: `url(${project.images[currentImageIndex]})` }}
-              onError={() => handleImageError(index)}
-            ></div>
+            <div className="w-full h-64 rounded-lg border-2 border-white/30 hover:border-white project-image-enhanced relative overflow-hidden">
+              <img
+                src={project.images[currentImageIndex]}
+                alt={`Media sample ${currentImageIndex}`}
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${fadeOut ? 'opacity-0' : 'opacity-100'}`}
+                onError={() => handleImageError(index)}
+              />
+            </div>
           )
         ) : (
           imageErrors[index] ? (

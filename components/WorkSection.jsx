@@ -62,7 +62,7 @@ const WorkSection = () => {
       role: "Media Expert",
       duration: "Ongoing",
       tech: ["Photoshop", "Premiere Pro", "After Effects", "DaVinci Resolve"],
-      images: ["/background2.JPG", "/background3.JPG", "/background.JPG","/photos/17.jpg","/photos/27.jpg","/photos/29.jpg","/photos/52.jpg","/photos/54.jpg","/photos/65.jpg","/photos/61.jpg"],
+      images: Array.from({ length: 65 }, (_, i) => `/photos/${i + 1}.jpg`),
       fallbackIcon: "🎥",
       pictureUrl: "/photos",
       videoUrl:"/videos",
