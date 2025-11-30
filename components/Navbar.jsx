@@ -88,7 +88,7 @@ export default function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <div className="px-4 sm:px-8 lg:px-12 max-w-7xl mx-auto">
+        <div className="px-2 sm:px-3 lg:px-4 w-full mx-auto">
           <div className="flex justify-between items-center">
             <Logo />
 

@@ -43,7 +43,7 @@ const CertificationsSection = () => {
   ];
 
   return (
-    <section id="certifications" className="py-20 scroll-mt-[150px] px-4 sm:px-8 lg:px-12 mx-auto max-w-7xl">
+    <section id="certifications" className="py-20 scroll-mt-[150px] px-2 sm:px-3 lg:px-4 mx-auto w-full">
       <div>
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-4">

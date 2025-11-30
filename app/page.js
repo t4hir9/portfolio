@@ -48,7 +48,7 @@ export default function Home() {
       <Navbar scrollToSection={scrollToSection} />
       <div className="min-h-screen bg-neutral-50 dark:bg-black overflow-x-hidden">
         <main
-          className={`relative z-10 px-4 sm:px-8 lg:px-12 pt-10 max-w-7xl mx-auto transition-opacity duration-1500 ease-out ${
+          className={`relative z-10 px-2 sm:px-3 lg:px-4 pt-10 w-full transition-opacity duration-1500 ease-out ${
             isLoaded ? "opacity-100" : "opacity-0"
           }`}
         >

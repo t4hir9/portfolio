@@ -7,7 +7,7 @@ const HeroSection = ({ scrollToSection }) => {
   return (
     <section
       id="home"
-      className="pt-15 pb-60 px-4 sm:px-8 lg:px-12 scroll-mt-15 bg-[url('/websitebackground.png')] bg-flex bg-right bg-no-repeat bg-cover"
+      className="pt-15 pb-60 px-2 sm:px-3 lg:px-4 scroll-mt-15 bg-[url('/websitebackground.png')] bg-flex bg-right bg-no-repeat bg-cover"
       style={{
         backgroundImage: `
         linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),

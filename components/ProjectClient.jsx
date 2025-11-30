@@ -57,7 +57,7 @@ const ProjectsClient = () => {
   return (
     <>
       <div className="min-h-screen bg-white dark:bg-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 pt-8 pb-20">
+        <div className="mx-auto px-2 sm:px-3 lg:px-4 w-full pt-8 pb-20">
           {/* Header */}
           <header className="mb-16">
             <button

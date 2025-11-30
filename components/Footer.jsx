@@ -9,7 +9,7 @@ export default function Footer({ homepage = true }) {
 
   return (
     <footer className="relative z-10 py-16 border-t border-neutral-200/80 dark:border-neutral-200/20 bg-white dark:bg-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div className="mx-auto px-2 sm:px-3 lg:px-4 w-full flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex flex-col items-center md:items-start gap-4">
           {homepage ? (
             <Logo />
