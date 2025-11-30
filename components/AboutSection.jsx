@@ -29,7 +29,7 @@ const AboutSection = () => (
     {/* Overlay for readability */}
     <div className="absolute inset-0 bg-gradient-to-br from-[rgba(0,0,0,0.5)] to-[rgba(50,50,50,0.7)] dark:from-[rgba(20,20,20,0.5)] dark:to-[rgba(30,30,30,0.7)]"></div>
 
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-40 relative z-10">
+    <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 pb-40 relative z-10">
       <div className="grid lg:grid-cols-12 gap-20">
         <div className="lg:col-span-6">
           <h2 className="text-4xl md:text-5xl font-extralight text-neutral-100 dark:text-neutral-100 mb-12 tracking-tight">

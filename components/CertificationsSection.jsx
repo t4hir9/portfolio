@@ -43,8 +43,8 @@ const CertificationsSection = () => {
   ];
 
   return (
-    <section id="certifications" className="py-20 scroll-mt-[150px]">
-      <div className="max-w-5xl">
+    <section id="certifications" className="py-20 scroll-mt-[150px] px-4 sm:px-8 lg:px-12 mx-auto max-w-7xl">
+      <div>
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-4">
             <Award className="w-6 h-6 text-white" />
