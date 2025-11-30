@@ -3,21 +3,21 @@
 import React, { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [nextImageIndex, setNextImageIndex] = useState(1);
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
     if (project.title === "Media samples" && project.images) {
       const interval = setInterval(() => {
         setFadeOut(true);
-        setTimeout(() => {
+        const timer = setTimeout(() => {
           setCurrentImageIndex((prev) => (prev + 1) % project.images.length);
-          setNextImageIndex((prev) => (prev + 1) % project.images.length);
           setFadeOut(false);
-        }, 250);
+        }, 300);
+        return () => clearTimeout(timer);
       }, 4000);
 
       return () => clearInterval(interval);
@@ -34,12 +34,16 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
               {project.fallbackIcon}
             </div>
           ) : (
-            <div className="w-full h-64 rounded-lg border-2 border-white/30 hover:border-white project-image-enhanced relative overflow-hidden">
-              <img
+            <div className="w-full h-64 rounded-lg border-2 border-white/30 hover:border-white project-image-enhanced relative overflow-hidden" style={{ willChange: 'opacity' }}>
+              <Image
                 src={project.images[currentImageIndex]}
                 alt={`Media sample ${currentImageIndex}`}
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${fadeOut ? 'opacity-0' : 'opacity-100'}`}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className={`object-cover transition-opacity duration-300 ${fadeOut ? 'opacity-0' : 'opacity-100'}`}
                 onError={() => handleImageError(index)}
+                loading="lazy"
+                quality={75}
               />
             </div>
           )
@@ -49,11 +53,16 @@ const ProjectCard = ({ project, index, imageErrors, handleImageError }) => {
               {project.fallbackIcon}
             </div>
           ) : (
-            <img
+            <Image
               src={project.image}
               alt={project.title}
+              width={600}
+              height={256}
               className="w-full h-64 object-cover rounded-lg border-2 border-white/30 hover:border-white transition-all duration-300 project-image-enhanced"
               onError={() => handleImageError(index)}
+              loading={index === 0 ? "eager" : "lazy"}
+              priority={index === 0}
+              quality={80}
             />
           )
         )}
