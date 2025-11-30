@@ -1,17 +1,57 @@
+"use client";
 
-import { Github, Linkedin, Mail, Instagram, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram, Twitter, ChevronDown } from "lucide-react";
 import Logo from "./Logo";
 import Link from "next/link";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
 
 export default function Footer({ homepage = true }) {
   // Precompute year on the server to avoid hydration mismatch
   const currentYear = new Date().getFullYear();
 
+  const socialLinks = [
+    {
+      name: "Email",
+      href: "mailto:abdultahir779@gmail.com",
+      icon: Mail,
+      external: false,
+    },
+    {
+      name: "LinkedIn",
+      href: "https://linkedin.com/in/iamt4hir9",
+      icon: Linkedin,
+      external: true,
+    },
+    {
+      name: "GitHub",
+      href: "https://github.com/t4hir9",
+      icon: Github,
+      external: true,
+    },
+    {
+      name: "Instagram",
+      href: "https://instagram.com/iamt4hir9",
+      icon: Instagram,
+      external: true,
+    },
+    {
+      name: "Twitter",
+      href: "https://twitter.com/iamt4hir9",
+      icon: Twitter,
+      external: true,
+    },
+  ];
+
   return (
-    <footer className="relative z-10 py-16 border-t border-neutral-200/80 dark:border-neutral-200/20 bg-white dark:bg-black">
+    <footer className="relative z-10 py-12 md:py-16 border-t border-neutral-200/80 dark:border-neutral-200/20 bg-white dark:bg-black">
       <div className="mx-auto px-2 sm:px-3 lg:px-4 w-full">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
-          {/* Left: Logo & Copyright */}
+        <div className="flex flex-col gap-8 md:gap-12">
+          {/* Top: Logo & Copyright */}
           <div className="flex flex-col items-start gap-4">
             {homepage ? (
               <Logo />
@@ -30,64 +70,70 @@ export default function Footer({ homepage = true }) {
                 </div>
               </Link>
             )}
-            <div className="text-sm text-gray-500 dark:text-neutral-300 font-light">
+            <div 
+              className="text-sm text-gray-500 dark:text-neutral-300 font-light"
+              suppressHydrationWarning
+            >
               © {currentYear} All rights reserved.
             </div>
           </div>
 
-          {/* Right: Connect with Me Section */}
-          <div className="flex flex-col items-start md:items-end gap-4">
-            <h3 className="text-sm font-medium text-neutral-900 dark:text-neutral-100 tracking-wide">Connect with me</h3>
-            <div className="flex items-center gap-6">
-              <Link
-                href="mailto:abdultahir779@gmail.com"
-                className="text-sm text-gray-500 dark:text-neutral-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 relative group flex items-center gap-2"
-                aria-label="Send me an email"
-              >
-                <Mail className="w-4 h-4" />
-                <span>Email</span>
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-gray-900 dark:bg-white transition-all duration-300 group-hover:w-full" />
-              </Link>
-              <Link
-                href="https://linkedin.com/in/iamt4hir9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-gray-500 dark:text-neutral-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 relative group flex items-center gap-2"
-              >
-                <Linkedin className="w-4 h-4" />
-                <span>LinkedIn</span>
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-gray-900 dark:bg-white transition-all duration-300 group-hover:w-full" />
-              </Link>
-              <Link
-                href="https://github.com/t4hir9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-gray-500 dark:text-neutral-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 relative group flex items-center gap-2"
-              >
-                <Github className="w-4 h-4" />
-                <span>GitHub</span>
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-gray-900 dark:bg-white transition-all duration-300 group-hover:w-full" />
-              </Link>
-              <Link
-                href="https://instagram.com/iamt4hir9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-gray-500 dark:text-neutral-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 relative group flex items-center gap-2"
-              >
-                <Instagram className="w-4 h-4" />
-                <span>Instagram</span>
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-gray-900 dark:bg-white transition-all duration-300 group-hover:w-full" />
-              </Link>
-              <Link
-                href="https://twitter.com/iamt4hir9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-gray-500 dark:text-neutral-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 relative group flex items-center gap-2"
-              >
-                <Twitter className="w-4 h-4" />
-                <span>Twitter</span>
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-gray-900 dark:bg-white transition-all duration-300 group-hover:w-full" />
-              </Link>
+          {/* Bottom: Connect with Me Section */}
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-8">
+            {/* Mobile Dropdown */}
+            <div className="md:hidden w-full sm:w-auto">
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-neutral-900 dark:text-neutral-100 border border-neutral-200 dark:border-neutral-700 rounded-lg hover:border-neutral-900 dark:hover:border-white transition-all duration-300 hover:bg-neutral-50 dark:hover:bg-neutral-900">
+                    Connect with me
+                    <ChevronDown className="w-4 h-4" />
+                  </button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="start" className="w-48 bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700">
+                  {socialLinks.map((link) => {
+                    const Icon = link.icon;
+                    return (
+                      <DropdownMenuItem key={link.name} asChild>
+                        <a
+                          href={link.href}
+                          target={link.external ? "_blank" : undefined}
+                          rel={link.external ? "noopener noreferrer" : undefined}
+                          className="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 cursor-pointer transition-colors duration-200"
+                        >
+                          <Icon className="w-4 h-4" />
+                          <span>{link.name}</span>
+                        </a>
+                      </DropdownMenuItem>
+                    );
+                  })}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
+
+            {/* Desktop Links */}
+            <div className="hidden md:flex flex-col items-end gap-4 w-full md:w-auto">
+              <h3 className="text-sm font-medium text-neutral-900 dark:text-neutral-100 tracking-wide">
+                Connect with me
+              </h3>
+              <div className="flex flex-wrap justify-start md:justify-end items-center gap-4 md:gap-6">
+                {socialLinks.map((link) => {
+                  const Icon = link.icon;
+                  return (
+                    <a
+                      key={link.name}
+                      href={link.href}
+                      target={link.external ? "_blank" : undefined}
+                      rel={link.external ? "noopener noreferrer" : undefined}
+                      className="text-sm text-gray-500 dark:text-neutral-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 relative group flex items-center gap-2"
+                      aria-label={`Connect via ${link.name}`}
+                    >
+                      <Icon className="w-4 h-4" />
+                      <span>{link.name}</span>
+                      <span className="absolute -bottom-1 left-0 w-0 h-px bg-gray-900 dark:bg-white transition-all duration-300 group-hover:w-full" />
+                    </a>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

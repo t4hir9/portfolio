@@ -1,10 +1,23 @@
 # Overview
 
-This is a personal portfolio website for Abdullahi Tahir Adamu, a React/Next.js developer and cinematographer based in Nigeria. The application showcases professional work, projects, certifications, media content (videos and pictures), and provides contact functionality. Built with Next.js 15.3.3 using the App Router architecture, it features a modern, responsive design with dark mode support.
+This is a personal portfolio website for Abdullahi Tahir Adamu, a React/Next.js developer and cinematographer based in Nigeria. The application showcases professional work, projects, certifications, media content (videos and pictures), and provides contact functionality. Built with Next.js 15.3.3 using the App Router architecture, it features a modern, responsive design with dark mode support and mobile-optimized dropdown menu.
 
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
+Mobile-first responsive design with dropdown menus for social links on mobile devices.
+White accent colors throughout (no cyan/blue).
+Full-width layout with minimal side padding (not centralized).
+
+# Recent Changes (Nov 30, 2025)
+
+- Added responsive dropdown menu for social links in footer (mobile: <md, desktop: md+)
+- Fixed about.MP4 video file path (case-sensitive)
+- Removed separate "Connect With Me" section from Contact page
+- Consolidated all social links (Email, LinkedIn, GitHub, Instagram, Twitter) to footer
+- Improved mobile responsiveness across all screen types
+- Fixed hydration errors with suppressHydrationWarning on dynamic content
+- Footer now uses Radix UI DropdownMenu for accessible mobile navigation
 
 # System Architecture
 
@@ -12,13 +25,20 @@ Preferred communication style: Simple, everyday language.
 
 **Framework**: Next.js 15.3.3 with App Router
 - **Rationale**: Leverages Next.js App Router for modern React patterns, built-in routing, SEO optimization, and server/client component separation
-- **Client-side Interactivity**: Uses "use client" directive for interactive components (scrolling effects, navigation)
+- **Client-side Interactivity**: Uses "use client" directive for interactive components (scrolling effects, navigation, dropdowns)
 - **Rendering Strategy**: Mix of server and client components for optimal performance
 
 **UI Component Library**: shadcn/ui with Radix UI primitives
 - **Rationale**: Provides accessible, customizable components without runtime overhead
 - **Styling Approach**: Tailwind CSS v4 with custom theme variables defined in globals.css
 - **Design System**: "new-york" style variant from shadcn/ui for consistent aesthetics
+- **Dropdown Menu**: Radix UI DropdownMenu for accessible mobile navigation with icon support
+
+**Responsive Design**:
+- Mobile breakpoints: sm (640px), md (768px), lg (1024px)
+- Mobile footer: Dropdown menu with "Connect with me" button and chevron icon
+- Desktop footer: Inline social links with hover underline animation
+- All sections include responsive padding (px-2 sm:px-3 lg:px-4)
 
 **State Management**:
 - **Local State**: React useState and useEffect hooks for component-level state
@@ -38,9 +58,23 @@ Preferred communication style: Simple, everyday language.
 - `/api/contact` - Contact form submission endpoint
 
 **Component Architecture**:
-- Modular section-based components (Navbar, HeroSection, AboutSection, etc.)
+- Modular section-based components (Navbar, HeroSection, AboutSection, Footer)
 - Reusable UI components in `/components/ui` directory
-- Custom hooks in `/hooks` directory (as configured)
+- Custom hooks in `/hooks` directory
+- Footer component: Client-side (use client) for dropdown interactivity
+
+## Media & Assets
+
+**Video Handling**:
+- `/public/about.MP4` - About section background video (9.3MB)
+- Hardware acceleration enabled: WebkitBackfaceVisibility, backfaceVisibility
+- Video attributes: autoPlay, loop, muted, playsInline, preload="auto"
+- **Note**: File path is case-sensitive (uppercase MP4 extension)
+
+**Photo Slideshow**:
+- 65 photos in `/public/photos` directory
+- Smooth 300ms fade transitions with 4-second intervals
+- Optimized media loading for all devices
 
 ## Performance Optimizations
 
@@ -62,7 +96,7 @@ Preferred communication style: Simple, everyday language.
 **Metadata Strategy**:
 - Template-based titles for consistent branding
 - Comprehensive Open Graph and Twitter Card metadata
-- Structured keywords for search optimization
+- Long-tail keywords: "React developer Nigeria", "Next.js specialist", "video editor cinematographer"
 - Canonical URLs and robots directives
 
 **Sitemap Implementation**:
@@ -75,8 +109,7 @@ Preferred communication style: Simple, everyday language.
 **Validation Layer**:
 - Zod schemas for runtime type validation
 - @hookform/resolvers for React Hook Form integration
-- **Pros**: Type-safe, prevents invalid data submission, excellent developer experience
-- **Cons**: Adds bundle size, but minimal impact given tree-shaking
+- Contact form endpoint: `/api/contact`
 
 **User Feedback**:
 - Sonner toast notifications for success/error states
@@ -96,7 +129,7 @@ Preferred communication style: Simple, everyday language.
 
 **Radix UI Components**:
 - @radix-ui/react-avatar - User avatar display
-- @radix-ui/react-dropdown-menu - Accessible dropdown menus
+- @radix-ui/react-dropdown-menu - Accessible dropdown menus (newly utilized for mobile footer)
 - @radix-ui/react-label - Form label components
 - @radix-ui/react-select - Select input components
 - @radix-ui/react-slot - Component composition utility
@@ -104,7 +137,7 @@ Preferred communication style: Simple, everyday language.
 **Styling Utilities**:
 - class-variance-authority - Type-safe variant styling
 - clsx & tailwind-merge - Utility for merging Tailwind classes
-- lucide-react - Icon library
+- lucide-react - Icon library (Mail, Linkedin, Github, Instagram, Twitter, ChevronDown)
 
 ## Development Tools
 
@@ -119,8 +152,8 @@ Preferred communication style: Simple, everyday language.
 
 ## Deployment Considerations
 
-**Hosting**: Optimized for Vercel deployment (referenced in metadata)
+**Hosting**: Optimized for Vercel deployment
 - Next.js-specific features like automatic static optimization
 - Environment variables for API keys and configuration
-
-**Domain**: tahiradamu.info (as specified in metadata and sitemap)
+- Responsive design ensures optimal display on all device sizes
+- Domain: tahiradamu.info
