@@ -1,30 +1,41 @@
 
 "use client"; // Added for potential client-side enhancements
 
-import React from "react";
+import React, { useState } from "react";
 
-const AboutSection = () => (
+const AboutSection = () => {
+  const [videoError, setVideoError] = useState(false);
+
+  return (
   <section
     id="about"
     className="min-h-screen w-full relative scroll-mt-[100px]"
   >
     {/* Video Background */}
-    <video
-      autoPlay
-      loop
-      muted
-      playsInline
-      preload="auto"
-      className="absolute inset-0 object-cover w-full h-full"
-      style={{
-        WebkitPlaysinline: true,
-        WebkitBackfaceVisibility: 'hidden',
-        backfaceVisibility: 'hidden',
-      }}
-    >
-      <source src="/about.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    {!videoError && (
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        className="absolute inset-0 object-cover w-full h-full"
+        style={{
+          WebkitPlaysinline: true,
+          WebkitBackfaceVisibility: 'hidden',
+          backfaceVisibility: 'hidden',
+        }}
+        onError={() => setVideoError(true)}
+      >
+        <source src="/videos/Reel.MP4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    )}
+
+    {/* Fallback gradient background if video fails */}
+    {videoError && (
+      <div className="absolute inset-0 bg-gradient-to-br from-neutral-900 via-black to-neutral-900"></div>
+    )}
 
     {/* Overlay for readability */}
     <div className="absolute inset-0 bg-gradient-to-br from-[rgba(0,0,0,0.5)] to-[rgba(50,50,50,0.7)] dark:from-[rgba(20,20,20,0.5)] dark:to-[rgba(30,30,30,0.7)]"></div>
@@ -86,6 +97,7 @@ const AboutSection = () => (
       </div>
     </div>
   </section>
-);
+  );
+};
 
 export default AboutSection;
