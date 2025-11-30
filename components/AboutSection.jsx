@@ -14,7 +14,13 @@ const AboutSection = () => (
       loop
       muted
       playsInline
+      preload="auto"
       className="absolute inset-0 object-cover w-full h-full"
+      style={{
+        WebkitPlaysinline: true,
+        WebkitBackfaceVisibility: 'hidden',
+        backfaceVisibility: 'hidden',
+      }}
     >
       <source src="/about.mp4" type="video/mp4" />
       Your browser does not support the video tag.
