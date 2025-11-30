@@ -50,8 +50,8 @@ export default function Footer({ homepage = true }) {
   return (
     <footer className="relative z-10 py-12 md:py-16 border-t border-neutral-200/80 dark:border-neutral-200/20 bg-white dark:bg-black">
       <div className="mx-auto px-2 sm:px-3 lg:px-4 w-full">
-        <div className="flex flex-col gap-8 md:gap-12">
-          {/* Top: Logo & Copyright */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
+          {/* Left: Logo & Copyright */}
           <div className="flex flex-col items-start gap-4">
             {homepage ? (
               <Logo />
@@ -78,13 +78,13 @@ export default function Footer({ homepage = true }) {
             </div>
           </div>
 
-          {/* Bottom: Connect with Me Section */}
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-8">
+          {/* Right: Connect with Me Section */}
+          <div className="flex flex-col items-start md:items-end gap-4 w-full md:w-auto">
             {/* Mobile Dropdown */}
-            <div className="md:hidden w-full sm:w-auto">
+            <div className="md:hidden w-full">
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-neutral-900 dark:text-neutral-100 border border-neutral-200 dark:border-neutral-700 rounded-lg hover:border-neutral-900 dark:hover:border-white transition-all duration-300 hover:bg-neutral-50 dark:hover:bg-neutral-900">
+                  <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-neutral-900 dark:text-neutral-100 border border-neutral-200 dark:border-neutral-700 rounded-lg hover:border-neutral-900 dark:hover:border-white transition-all duration-300 hover:bg-neutral-50 dark:hover:bg-neutral-900 w-full md:w-auto justify-between">
                     Connect with me
                     <ChevronDown className="w-4 h-4" />
                   </button>
@@ -111,11 +111,11 @@ export default function Footer({ homepage = true }) {
             </div>
 
             {/* Desktop Links */}
-            <div className="hidden md:flex flex-col items-end gap-4 w-full md:w-auto">
+            <div className="hidden md:flex flex-col items-end gap-4">
               <h3 className="text-sm font-medium text-neutral-900 dark:text-neutral-100 tracking-wide">
                 Connect with me
               </h3>
-              <div className="flex flex-wrap justify-start md:justify-end items-center gap-4 md:gap-6">
+              <div className="flex items-center gap-6">
                 {socialLinks.map((link) => {
                   const Icon = link.icon;
                   return (
