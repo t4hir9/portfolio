@@ -8,6 +8,18 @@ export const metadata = {
 };
 
 const VideosPage = () => {
+  const videos = [
+    { src: "/videos/culverin.MP4", title: "Culverin" },
+    { src: "/videos/FTS.MP4", title: "FTS" },
+    { src: "/videos/Outfit_3_Redo.mp4", title: "Outfit 3 Redo" },
+    { src: "/videos/Outfit_4.mp4", title: "Outfit 4" },
+    { src: "/videos/Reel.MP4", title: "Reel" },
+    { src: "/videos/Rubix.MP4", title: "Rubix" },
+    { src: "/videos/Scribble.MP4", title: "Scribble" },
+    { src: "/videos/titan.MP4", title: "Titan" },
+    { src: "/videos/Walima_Second.mp4", title: "Walima Second" },
+  ];
+
   return (
     <>
       <div className="min-h-screen bg-white dark:bg-black">
@@ -21,9 +33,19 @@ const VideosPage = () => {
           <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-12 max-w-2xl">Professional video and cinematography work featuring creative storytelling and technical expertise.</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-neutral-100 to-neutral-200 dark:from-neutral-900 dark:to-neutral-800 rounded-lg h-64 flex items-center justify-center">
-              <p className="text-neutral-600 dark:text-neutral-400">Video portfolio coming soon</p>
-            </div>
+            {videos.map((video, idx) => (
+              <div key={idx} className="flex flex-col gap-3">
+                <div className="relative overflow-hidden rounded-lg bg-neutral-100 dark:bg-neutral-900 aspect-video border border-neutral-200 dark:border-neutral-800">
+                  <video 
+                    src={video.src} 
+                    controls 
+                    className="w-full h-full object-cover"
+                    preload="metadata"
+                  />
+                </div>
+                <h3 className="text-neutral-800 dark:text-neutral-200 font-medium">{video.title}</h3>
+              </div>
+            ))}
           </div>
         </div>
       </div>
