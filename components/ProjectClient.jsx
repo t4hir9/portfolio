@@ -24,18 +24,6 @@ const ProjectsClient = () => {
       url: "https://jaybash-customs.vercel.app",
     },
     {
-      title: "mindspace - Mental Health Platform",
-      description:
-        "A project created to help students with their mental health by providing resources and a safe space to talk.",
-      year: "2024",
-      role: "Full Stack",
-      duration: "12 weeks",
-      tech: ["React", "Next.js", "Supabase", "Tailwind CSS", "TypeScript"],
-      image: "/mindspace.png",
-      fallbackIcon: "📋",
-      url: "https://mindspace.vercel.app",
-    },
-    {
       title: "Media samples",
       description:
         "A collection of media projects including photography and videography samples showcasing my skills and creativity.",

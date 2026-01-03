@@ -6,39 +6,14 @@ import { Award } from "lucide-react";
 const CertificationsSection = () => {
   const certifications = [
     {
-      title: "Google UX Design Certificate",
-      year: "2025",
-      icon: "🎨",
-    },
-    {
       title: "Meta Front-End Developer Certificate",
       year: "2024",
       icon: "💻",
     },
     {
-      title: "IBM Blockchain Essentials",
-      year: "2025",
-      icon: "⛓️",
-    },
-    {
       title: "Adobe Certified Expert – Premiere Pro",
       year: "2023",
       icon: "🎬",
-    },
-    {
-      title: "AWS Cloud Practitioner",
-      year: "2024",
-      icon: "☁️",
-    },
-    {
-      title: "Consensys Blockchain Developer",
-      year: "2025",
-      icon: "🔐",
-    },
-    {
-      title: "Drone Pilot Certification – NCAA",
-      year: "2022",
-      icon: "🚁",
     },
   ];
 
