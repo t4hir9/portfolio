@@ -1,12 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-
-export const metadata = {
-  title: "Photo Gallery | Abdullahi Tahir Adamu",
-  description: "Photography portfolio showcasing creative visual work.",
-};
 
 const PhotosPage = () => {
   const photos = Array.from({ length: 65 }, (_, i) => `/photos/${i + 1}.jpg`);
@@ -35,7 +32,7 @@ const PhotosPage = () => {
                   loading="lazy"
                   quality={75}
                   onError={(e) => {
-                    e.target.style.display = "none";
+                    e.currentTarget.style.display = "none";
                   }}
                 />
               </div>

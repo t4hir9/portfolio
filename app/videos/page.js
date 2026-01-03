@@ -1,11 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import Footer from "@/components/Footer";
-
-export const metadata = {
-  title: "Video Samples | Abdullahi Tahir Adamu",
-  description: "Professional video and cinematography samples showcasing creative work.",
-};
 
 const VideosPage = () => {
   const videos = [
