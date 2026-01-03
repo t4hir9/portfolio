@@ -32,10 +32,10 @@ const VideosPage = () => {
           <h1 className="text-4xl md:text-5xl font-extralight text-neutral-900 dark:text-neutral-100 mb-8 tracking-tight">Video Samples</h1>
           <p className="text-lg text-neutral-600 dark:text-neutral-300 mb-12 max-w-2xl">Professional video and cinematography work featuring creative storytelling and technical expertise.</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {videos.map((video, idx) => (
               <div key={idx} className="flex flex-col gap-3">
-                <div className="relative overflow-hidden rounded-lg bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 w-full">
+                <div className="relative overflow-hidden rounded-lg bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 w-full flex items-center justify-center">
                   <video 
                     src={video.src} 
                     autoPlay 
@@ -43,7 +43,7 @@ const VideosPage = () => {
                     loop 
                     playsInline
                     controls 
-                    className="w-full h-auto max-h-[80vh] block mx-auto"
+                    className="max-w-full max-h-[80vh] w-auto h-auto block"
                     preload="metadata"
                     onClick={(e) => {
                       e.currentTarget.muted = !e.currentTarget.muted;
