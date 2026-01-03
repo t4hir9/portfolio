@@ -35,12 +35,19 @@ const VideosPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {videos.map((video, idx) => (
               <div key={idx} className="flex flex-col gap-3">
-                <div className="relative overflow-hidden rounded-lg bg-neutral-100 dark:bg-neutral-900 aspect-video border border-neutral-200 dark:border-neutral-800">
+                <div className="relative overflow-hidden rounded-lg bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 w-full">
                   <video 
                     src={video.src} 
+                    autoPlay 
+                    muted 
+                    loop 
+                    playsInline
                     controls 
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto max-h-[80vh] block mx-auto"
                     preload="metadata"
+                    onClick={(e) => {
+                      e.currentTarget.muted = !e.currentTarget.muted;
+                    }}
                   />
                 </div>
                 <h3 className="text-neutral-800 dark:text-neutral-200 font-medium">{video.title}</h3>
