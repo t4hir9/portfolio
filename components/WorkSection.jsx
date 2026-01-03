@@ -21,40 +21,6 @@ const WorkSection = () => {
       url: "https://jaybash-customs.vercel.app",
     },
     {
-      title: "Mindspace Platform",
-      description:
-        "A mental health platform created to help students with resources and a safe space to talk. Built with React and Supabase for secure, real-time data management.",
-      year: "2024",
-      role: "Full Stack Developer",
-      duration: "12 weeks",
-      tech: ["React", "Next.js", "Supabase", "Tailwind CSS", "TypeScript"],
-      image: "/mindspace.png",
-      fallbackIcon: "📋",
-      url: "https://mindspace.vercel.app",
-    },
-    {
-      title: "Boride Ride-Hailing App",
-      description:
-        "A comprehensive ride-hailing application with real-time features and secure payment integration. Built with React Native backend and Node.js for a complete mobile experience.",
-      year: "2023",
-      role: "Frontend Developer",
-      duration: "Ongoing",
-      tech: ["React Native", "Node.js", "Real-time Features", "Payment Integration"],
-      image: "/boride.png",
-      fallbackIcon: "🚗",
-    },
-    {
-      title: "Crypto Portfolio Tracker dApp",
-      description:
-        "A decentralized application for tracking cryptocurrency portfolios. Built with Web3.js integration for wallet connectivity and real-time blockchain data.",
-      year: "2023",
-      role: "Frontend Developer",
-      duration: "8 weeks",
-      tech: ["Web3.js", "React", "Ethereum", "Blockchain"],
-      image: "/crypto-tracker.png",
-      fallbackIcon: "₿",
-    },
-    {
       title: "Media samples",
       description:
         "A collection of media projects including photography and videography samples showcasing my skills and creativity.",
