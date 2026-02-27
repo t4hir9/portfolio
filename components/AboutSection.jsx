@@ -1,4 +1,3 @@
-
 "use client"; // Added for potential client-side enhancements
 
 import React from "react";
@@ -18,8 +17,8 @@ const AboutSection = () => (
       className="absolute inset-0 object-cover w-full h-full"
       style={{
         WebkitPlaysinline: true,
-        WebkitBackfaceVisibility: 'hidden',
-        backfaceVisibility: 'hidden',
+        WebkitBackfaceVisibility: "hidden",
+        backfaceVisibility: "hidden",
       }}
     >
       <source src="/about.MP4" type="video/mp4" />
@@ -37,13 +36,23 @@ const AboutSection = () => (
           </h2>
           <div className="space-y-8 text-lg text-neutral-300 dark:text-neutral-300 leading-relaxed font-light">
             <p>
-              I&apos;m Abdullahi Tahir Adamu, a professional cinematographer and photographer with over 6 years of experience in visual storytelling. Based in Nigeria, I specialize in creating cinematic visuals that bring brand stories to life.
+              I&apos;m Abdullahi Tahir Adamu, a professional cinematographer and
+              photographer with over 6 years of experience in visual
+              storytelling. Based in Nigeria, I specialize in creating cinematic
+              visuals that bring brand stories to life.
             </p>
             <p>
-              My expertise spans across professional video editing, drone cinematography, and high-end photography. I've worked with numerous brands to deliver high-quality visual content that resonates with audiences. From capturing raw emotions in photography to the technical precision of color grading in post-production, I am dedicated to the craft of visual excellence.
+              My expertise spans across professional video editing, drone
+              cinematography, and high-end photography. I've worked with
+              numerous brands to deliver high-quality visual content that
+              resonates with audiences. From capturing raw emotions in
+              photography to the technical precision of color grading in
+              post-production, I am dedicated to the craft of visual excellence.
             </p>
             <p>
-              When I&apos;m not behind the camera or in the editing suite, you&apos;ll find me exploring new visual trends, making sure my creative vision remains at the forefront of the industry.
+              When I&apos;m not behind the camera or in the editing suite,
+              you&apos;ll find me exploring new visual trends, making sure my
+              creative vision remains at the forefront of the industry.
             </p>
           </div>
         </div>
@@ -55,10 +64,38 @@ const AboutSection = () => (
           </h3>
           <div className="space-y-8">
             {[
-              { category: "Cinematography", skills: ["Direction", "Lighting", "Composition", "Drone Piloting"] },
-              { category: "Photography", skills: ["Portraiture", "Event Coverage", "Product Photography", "Nature"] },
-              { category: "Post-Production", skills: ["Premiere Pro", "After Effects", "DaVinci Resolve", "Photoshop", "Lightroom"] },
-              { category: "Equipment", skills: ["Sony Alpha Series", "DJI Drones", "Gimbal Operation", "Studio Lighting"] }
+              {
+                category: "Cinematography",
+                skills: ["Director", "Script writer", "Drone Pilot"],
+              },
+              {
+                category: "Photography",
+                skills: [
+                  "Portraiture",
+                  "Event Coverage",
+                  "Product Photography",
+                  "Nature",
+                ],
+              },
+              {
+                category: "Post-Production",
+                skills: [
+                  "Premiere Pro",
+                  "After Effects",
+                  "DaVinci Resolve",
+                  "Photoshop",
+                  "Lightroom",
+                ],
+              },
+              {
+                category: "Equipment",
+                skills: [
+                  "Camera settings",
+                  "DJI Drones",
+                  "Gimbal Operation",
+                  "Studio Lighting",
+                ],
+              },
             ].map((group) => (
               <div key={group.category} className="group/skill">
                 <div className="grid grid-cols-12 gap-4 items-start">

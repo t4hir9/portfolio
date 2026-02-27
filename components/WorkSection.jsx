@@ -15,20 +15,26 @@ const WorkSection = () => {
       year: "2020 - Present",
       role: "Photographer",
       duration: "Ongoing",
-      tech: ["Photoshop", "Lightroom", "Composition", "Lighting"],
-      images: ["/photos/1.jpg", "/photos/2.jpg", "/photos/3.jpg", "/photos/4.jpg", "/photos/5.jpg"],
+      tech: ["Photoshop", "Lightroom"],
+      images: [
+        "/photos/1.jpg",
+        "/photos/2.jpg",
+        "/photos/3.jpg",
+        "/photos/4.jpg",
+        "/photos/5.jpg",
+      ],
       fallbackIcon: "📸",
       pictureUrl: "/photos",
     },
     {
-      title: "Cinematography",
+      title: "Videography",
       description:
         "Professional video production and editing. Cinematic storytelling for brands, events, and creative projects.",
       year: "2020 - Present",
-      role: "Cinematographer",
+      role: "videographer",
       duration: "Ongoing",
-      tech: ["Premiere Pro", "After Effects", "DaVinci Resolve", "Drone Cinematography"],
-      images: ["/background.JPG", "/background2.JPG", "/background3.JPG"],
+      tech: ["Premiere Pro", "After Effects", "DaVinci Resolve"],
+      images: ["/beeh final1.mp4", "/scribble.MP4", "/reel_5.mp4"],
       fallbackIcon: "🎥",
       videoUrl: "/videos",
     },
@@ -41,13 +47,13 @@ const WorkSection = () => {
   return (
     <section id="work" className="pb-40 scroll-mt-[150px]">
       <div className="mb-16">
-        <h2 className="section-title-cinematic mb-4">
-          Projects
-        </h2>
+        <h2 className="section-title-cinematic mb-4">Projects</h2>
         <div className="cinematic-divider mb-8"></div>
 
         <p className="text-xl text-neutral-600 dark:text-neutral-300 leading-relaxed mb-16 max-w-3xl font-light animate-fade-in-up">
-          Recent projects that showcase thoughtful design and clean implementation. Each project represents a blend of creative problem-solving and technical excellence tailored to deliver results.
+          Recent projects that showcase thoughtful design and clean
+          implementation. Each project represents a blend of creative
+          problem-solving and technical excellence tailored to deliver results.
         </p>
       </div>
 
