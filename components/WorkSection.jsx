@@ -9,23 +9,11 @@ const WorkSection = () => {
 
   const projects = [
     {
-      title: "Jaybash Customs Website",
-      description:
-        "A state-of-the-art website for car customization and drift school. Users can customize their rides and book drift lessons with a modern, responsive interface.",
-      year: "2025",
-      role: "Frontend Developer",
-      duration: "4 weeks",
-      tech: ["TypeScript", "Tailwind CSS", "Next.js"],
-      image: "/jaybashcustoms.png",
-      fallbackIcon: "💱",
-      url: "https://jaybash-customs.vercel.app",
-    },
-    {
       title: "Media samples",
       description:
         "A collection of media projects including photography and videography samples showcasing my skills and creativity.",
       year: "2020 - Present",
-      role: "Media Expert",
+      role: "Cinematographer",
       duration: "Ongoing",
       tech: ["Photoshop", "Premiere Pro", "After Effects", "DaVinci Resolve"],
       images: Array.from({ length: 65 }, (_, i) => `/photos/${i + 1}.jpg`),

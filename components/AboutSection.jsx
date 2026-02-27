@@ -37,13 +37,13 @@ const AboutSection = () => (
           </h2>
           <div className="space-y-8 text-lg text-neutral-300 dark:text-neutral-300 leading-relaxed font-light">
             <p>
-              I&apos;m Abdullahi Tahir Adamu, a React developer and Next.js specialist with 6+ years of experience building modern web applications. Based in Nigeria, I&apos;m a senior frontend developer specializing in Web3 interfaces, responsive web design, and scalable JavaScript applications. I also excel as a professional video editor and cinematographer, bringing creative storytelling to digital products.
+              I&apos;m Abdullahi Tahir Adamu, a professional cinematographer and photographer with over 6 years of experience in visual storytelling. Based in Nigeria, I specialize in creating cinematic visuals that bring brand stories to life.
             </p>
             <p>
-              As a frontend developer for hire, I specialize in creating digital experiences that are visually stunning, performant, and accessible. My expertise spans Web3 development, wallet integrations, decentralized dashboards, and React Native mobile apps. I've built responsive web applications with real-time features achieving 40% performance improvements. Beyond frontend development, my video editing and cinematography skills add creative dimension to brand storytelling and digital marketing.
+              My expertise spans across professional video editing, drone cinematography, and high-end photography. I've worked with numerous brands to deliver high-quality visual content that resonates with audiences. From capturing raw emotions in photography to the technical precision of color grading in post-production, I am dedicated to the craft of visual excellence.
             </p>
             <p>
-              When I&apos;m not coding or creating magic with my camera, you&apos;ll find me exploring new design trends, making sure my ideas and vision are as sharp and sturdy as the world adapts.
+              When I&apos;m not behind the camera or in the editing suite, you&apos;ll find me exploring new visual trends, making sure my creative vision remains at the forefront of the industry.
             </p>
           </div>
         </div>
@@ -51,14 +51,14 @@ const AboutSection = () => (
         <div className="lg:col-span-6 space-y-16">
           {/* Skills Section */}
           <h3 className="text-xl font-light text-neutral-100 dark:text-neutral-100 mb-10 tracking-wide">
-            Skills & Technologies
+            Creative Expertise
           </h3>
           <div className="space-y-8">
             {[
-              { category: "Technical", skills: ["JavaScript", "TypeScript", "React", "Next.js", "React Native", "Python", "C++", "Git"] },
-              { category: "Web3", skills: ["Web3.js", "Ethereum", "Wallet Integration", "dApp Prototyping"] },
-              { category: "Styling & Tools", skills: ["Tailwind CSS", "VS Code", "Vercel", "TypeScript"] },
-              { category: "Creative", skills: ["Premiere Pro", "After Effects", "DaVinci Resolve", "Photography", "Drone Cinematography"] }
+              { category: "Cinematography", skills: ["Direction", "Lighting", "Composition", "Drone Piloting"] },
+              { category: "Photography", skills: ["Portraiture", "Event Coverage", "Product Photography", "Nature"] },
+              { category: "Post-Production", skills: ["Premiere Pro", "After Effects", "DaVinci Resolve", "Photoshop", "Lightroom"] },
+              { category: "Equipment", skills: ["Sony Alpha Series", "DJI Drones", "Gimbal Operation", "Studio Lighting"] }
             ].map((group) => (
               <div key={group.category} className="group/skill">
                 <div className="grid grid-cols-12 gap-4 items-start">

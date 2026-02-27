@@ -12,23 +12,11 @@ const ProjectsClient = () => {
 
   const projects = [
     {
-      title: "jaybash Customs - Car Customization & Drift School",
-      description:
-        "A state of the art website built for the one and only drift king. Users can customise their rides and book drift lessons.",
-      year: "2025",
-      role: "Frontend Developer",
-      duration: "4 weeks",
-      tech: ["Nextjs", "Tailwind CSS", "typescript"],
-      image: "/jaybashcustoms.png",
-      fallbackIcon: "💱",
-      url: "https://jaybash-customs.vercel.app",
-    },
-    {
       title: "Media samples",
       description:
         "A collection of media projects including photography and videography samples showcasing my skills and creativity.",
       year: "2020 - Present",
-      role: "Media Expert",
+      role: "Cinematographer",
       duration: "Ongoing",
       tech: ["Photoshop", "Premiere Pro", "After Effects", "DaVinci Resolve"],
       images: ["/background2.JPG", "/background3.JPG", "/background.JPG","/photos/17.jpg","/photos/27.jpg","/photos/29.jpg","/photos/52.jpg","/photos/54.jpg","/photos/65.jpg","/photos/61.jpg"],

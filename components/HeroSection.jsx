@@ -24,17 +24,17 @@ const HeroSection = ({ scrollToSection }) => {
         </div>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight text-neutral-100 dark:text-neutral-100 leading-[0.9] mb-8 tracking-tight animate-cinematic-slide">
-          <span className="inline-block animate-floating">Front-End Developer</span>
+          <span className="inline-block animate-floating">Photographer</span>
           <br />
           <span className="text-neutral-400 dark:text-neutral-400 italic font-thin">
             &
           </span>{" "}
-          <span className="inline-block animate-floating" style={{ animationDelay: "0.2s" }}>Media Expert</span>
+          <span className="inline-block animate-floating" style={{ animationDelay: "0.2s" }}>Cinematographer</span>
         </h1>
 
         <div className="max-w-2xl mb-16">
           <p className="text-xl md:text-2xl text-neutral-300 dark:text-neutral-300 leading-relaxed font-light mb-8">
-            React developer and Next.js specialist with 6+ years building modern web applications and Web3 interfaces. Senior frontend developer delivering high-performance, responsive applications. Also a professional video editor and cinematographer creating cinematic visuals for brands across Nigeria and beyond.
+            Professional video editor and cinematographer creating cinematic visuals for brands across Nigeria and beyond. Capturing stories through lens and light with over 6 years of experience in visual storytelling.
           </p>
         </div>
 

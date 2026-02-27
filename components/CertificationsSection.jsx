@@ -28,7 +28,7 @@ const CertificationsSection = () => {
             </h2>
           </div>
           <p className="text-xl text-neutral-600 dark:text-neutral-300 leading-relaxed max-w-3xl font-light">
-            Professional certifications and achievements that validate my expertise across frontend development, Web3, design, and creative technologies.
+            Professional certifications and achievements that validate my expertise in cinematography, video production, and creative storytelling.
           </p>
         </div>
 

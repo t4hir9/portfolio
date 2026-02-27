@@ -7,11 +7,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: {
     template: "%s | Abdullahi Tahir Adamu",
-    default: "Abdullahi Tahir Adamu | React Developer & Cinematographer Nigeria",
+    default: "Abdullahi Tahir Adamu | Photographer & Cinematographer",
   },
   description:
-    "React developer and video editor in Nigeria with 6+ years of experience. Freelance Next.js developer specializing in Web3 interfaces, responsive web apps, and professional cinematography. Frontend developer for hire with media production expertise.",
-  keywords: ["React developer Nigeria", "Next.js developer freelance", "Frontend developer Web3", "Video editor cinematographer", "Web developer Nigeria", "Professional video editing", "React and Next.js specialist", "Frontend developer for hire"],
+    "Professional photographer and cinematographer in Nigeria with 6+ years of experience. Specializing in cinematic video production, high-end photography, and professional video editing.",
+  keywords: ["Photographer Nigeria", "Cinematographer Nigeria", "Video editor Nigeria", "Professional photography", "Cinematic video production", "Drone pilot Nigeria"],
   metadataBase: new URL("https://tahiradamu.info"),
   alternates: {
     canonical: "/",
@@ -27,9 +27,9 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Abdullahi Tahir Adamu | Front-End Developer & Media Expert",
+    title: "Abdullahi Tahir Adamu | Photographer & Cinematographer",
     description:
-      "Abdullahi Tahir Adamu is a skilled Front-End Developer and Media Expert from Nigeria, specializing in React, Next.js, JavaScript, and creating user-friendly, responsive web applications.",
+      "Abdullahi Tahir Adamu is a skilled photographer and cinematographer from Nigeria, specializing in cinematic storytelling and professional visual production.",
     url: "https://tahiradamu.info",
     siteName: "Abdullahi Tahir Adamu Portfolio",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
         url: "https://tahiradamu.info/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Abdullahi Tahir Adamu Portfolio - Front-End Developer & Media Expert",
+        alt: "Abdullahi Tahir Adamu Portfolio - Photographer & Cinematographer",
       },
     ],
     locale: "en_NG",
@@ -45,9 +45,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Abdullahi Tahir Adamu | Front-End Developer & Media Expert in Nigeria",
+    title: "Abdullahi Tahir Adamu | Photographer & Cinematographer in Nigeria",
     description:
-      "Portfolio of Abdullahi Tahir Adamu, a Front-End Developer and Media Expert from Nigeria, specializing in React, Next.js, and media solutions.",
+      "Portfolio of Abdullahi Tahir Adamu, a photographer and cinematographer from Nigeria, specializing in professional visual storytelling.",
     images: ["https://tahiradamu.info/og-image.png"],
     creator: "@iamt4hir9",
   },
@@ -76,25 +76,22 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Abdullahi Tahir Adamu",
-    jobTitle: "Front-End Developer and Media Expert",
+    jobTitle: "Photographer and Cinematographer",
     url: "https://tahiradamu.info",
     sameAs: [
       "https://www.linkedin.com/in/iamt4hir9/",
-      "https://github.com/t4hir9",
       "https://instagram.com/iamt4hir9",
       "https://twitter.com/iamt4hir9",
     ],
     skills: [
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "JavaScript",
-      "HTML5",
-      "CSS3",
-      "Web Development",
       "Photography",
       "Videography",
-      "Social Media Marketing",
+      "Cinematography",
+      "Video Editing",
+      "Drone Piloting",
+      "Color Grading",
+      "Lighting",
+      "Visual Storytelling",
     ],
     worksFor: {
       "@type": "Organization",
