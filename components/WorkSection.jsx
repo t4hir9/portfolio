@@ -9,17 +9,28 @@ const WorkSection = () => {
 
   const projects = [
     {
-      title: "Media samples",
+      title: "Photography",
       description:
-        "A collection of media projects including photography and videography samples showcasing my skills and creativity.",
+        "A curated collection of professional photography, capturing moments across Nigeria. From portraits to event coverage and drone shots.",
+      year: "2020 - Present",
+      role: "Photographer",
+      duration: "Ongoing",
+      tech: ["Photoshop", "Lightroom", "Composition", "Lighting"],
+      images: ["/photos/1.jpg", "/photos/2.jpg", "/photos/3.jpg", "/photos/4.jpg", "/photos/5.jpg"],
+      fallbackIcon: "📸",
+      pictureUrl: "/photos",
+    },
+    {
+      title: "Cinematography",
+      description:
+        "Professional video production and editing. Cinematic storytelling for brands, events, and creative projects.",
       year: "2020 - Present",
       role: "Cinematographer",
       duration: "Ongoing",
-      tech: ["Photoshop", "Premiere Pro", "After Effects", "DaVinci Resolve"],
-      images: Array.from({ length: 65 }, (_, i) => `/photos/${i + 1}.jpg`),
+      tech: ["Premiere Pro", "After Effects", "DaVinci Resolve", "Drone Cinematography"],
+      images: ["/background.JPG", "/background2.JPG", "/background3.JPG"],
       fallbackIcon: "🎥",
-      pictureUrl: "/photos",
-      videoUrl:"/videos",
+      videoUrl: "/videos",
     },
   ];
 
